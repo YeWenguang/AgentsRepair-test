@@ -1,0 +1,6222 @@
+probid: 822A
+pseudo program:
+```
+in function fact which accepts integer n and returns long long integer
+	if n <= 0
+		return 1
+	else
+		return n * fact(n - 1)
+}
+int main() {
+	a, b = long long integers
+	read a and b
+	x = long long integer set to min(a, b)
+	print fact(x)
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	let a, b, c be long integers
+	read a, b
+	if a is greater than b
+		c is equal to a
+		a is equal to b
+		b is equal to c
+	}
+	c is equal to 1
+	while a is true
+		c is equal to c * a
+		decrement a by 1
+	}
+	print c and newline
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	a, b = integer
+	sum = long long = 1
+	read a, b
+	min = integer = a if a < b else min = b
+	for i = 2 to min inclusive, then sum = sum * i
+	print sum
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+new array of integers dx with values 0, 0, -1, 1
+new array of integers dy with values 1, -1, 0, 0
+int main() {
+	create new ints x and y
+	read x and y from the input
+	g is a new integer with value min of x and y
+	create new integer called ans = 1
+	loop through i from 1 while i < g + 1, multiplying ans by i on each iteration
+	print ans and '\n'
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+function factorial with long argument A that returns long
+	declare long variable with name ans = 1
+	for i from 1 to A inclusive, multiply ans by i
+	return ans
+}
+int main() {
+	declare longs A and B
+	read A and B from the user input
+	print factorial(min of A and B) and "\n" to the standard output
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+function fact (get long long n, return long long)
+	if n is 0 or 1
+		return 1
+	else
+		return n*fact(n-1)
+}
+function gcd (get long long a and b, return long long)
+	if b is 0
+		return a
+	else
+		return gcd(b, a modulo b)
+}
+int main() {
+	a,b=long long
+	read a,b
+	c=min(a,b)
+	print fact(c)
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	declare long longs t, i, j, n, m, k, ans, ck, cnt = 0, sum = 0, c = 0
+	declare strings s, s1, s2, tmp
+	read n and m
+	let ck be minimum of n and m
+	declare long long face = 1
+	for i = 1 to ck inclusive, let fact be fact * i
+	print face and newline
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+declare function factorial which takes integer a
+	if a is equal to 1 then return 1
+	return a * factorial(a - 1)
+}
+int main() {
+	create integers a and b
+	read a and b
+	if a is greater than b
+		print factorial of b
+	else
+		print factorial of a
+	}
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	a, b, x, i, k = long long int with k = 1
+	read a then b
+	set x to min of a, b
+	for i = 1 to x inclusive set k to k * i
+	print k
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+create new vector of integers called divisor with 1000000+1 elements filled with 0
+integer function bigmod with long long arguments a, b and c
+	create long long variable with name x
+	if b is equal to 0, return 1 modulo c
+	change x to bigmod(a, b / 2, c)
+	set x to x squared % c
+	if b & 1 is true, assign the new value = (x * a) % c to x
+	return x
+}
+ulong long function factorial with long long argument n
+	new ulong long fact = 1
+	in a for loop, change i from 2 to n inclusive, multiplying fact by i
+	return fact
+}
+int main() {
+	declare int variables x and y
+	loop, reading x and y from the input
+		new integer variable mn with value min of x and y
+		new ulong long A = result of factorial(mn)
+		print the result of __gcd(A, A)
+	}
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+in the function fac that takes long long n and returns long long
+	ans = long long with ans = 1
+	for i = 1 to n, ans = ans * i
+	return ans
+}
+int main() {
+	a, b = long long
+	read a, b
+	print fac(min(a, b))
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+long long function gcd with long long arguments a and b
+	if b != 0, return a
+	return gcd(b, (a % b))
+}
+int main() {
+	declare long long variables n, m, a and b with a and b = 1
+	read input to n and m
+	if n is greater than m, swap n and m
+	in a for loop, change i from 1 to n inclusive, multiplying a by i on each iteration
+	start for loop from i = 1 to n + 1 inclusive, multiply b by i on each loop
+	print gcd(a, b) and "\n" to the standard output
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	a, b, i, ans, x = int with ans = 1
+	read a then b
+	set x to min of a, b
+	for i = 1 to x inclusive set ans to ans * i
+	print ans
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	declare ints a and b
+	create long long variable sum = 1
+	read a and b and keep looping
+		create new integer variable cnt with value min of a and b
+		loop through i from 1 to cnt inclusive, multiplying sum byi on each iteration
+		print sum
+	}
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	a, b = integers
+	read a and b
+	mn, ans = integers with mn having value of the minimum of a and b, and ans having value of 1
+	for i = 2 to mn inclusive set ans to ans * i
+	print ans
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+declare long longs a, b, c, v and e
+int main() {
+	read input to a and b
+	if a <= b
+		assign the new value = a to v
+	else
+		set v to b
+	change the values of a and b to 1
+	while v > 0
+		change the value of b to b multiplied by a
+		increment a by one
+		decrement v by one
+	}
+	print b
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+create long long int fact(long int x)
+	if x=0 or 1, return 1
+	return x * fact(x - 1)
+}
+int main() {
+	create long int a, b
+	read a
+	read b
+	if a > b
+		print fact(b) and a newline
+	else
+		print fact(a) and a newline
+	}
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+function fact (get int n, return int)
+	if n is 1 return 1
+	return n*fact(n-1)
+}
+int main() {
+	a,b=int
+	read a,b
+	output=fact(int(min(a,b)))
+	print output
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+maxn = 1e5 + 7
+int main() {
+	create int a and b
+	read a, b
+	set c to min of a and b
+	ans = 1
+	for i=1 to c inclusive, set ans to ans *i
+	print ans
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+define function fact with long long as argument and returns a long long
+	if x less than or equal to 1 then
+		return 1 to the calling statement
+	else do the following
+		return x * return value of fact(x-1) to the calling statement
+}
+int main() {
+	create long long a, b
+	read a, b
+	if a greater than b then
+		call fact(b) and print the return value
+	else do the following
+		call fact(a) and print the return value
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+in function fact with argument integer n that returns an unsigned long long
+	ans = unsigned long long = 1
+	while . >= 1
+		ans = ans * n
+		decrease n by 1
+	}
+	return ans
+}
+int main() {
+	a, b = integer
+	read a, b
+	print call fact with argument of the lower value between a and b
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+ll = long long with value of 1
+int main() {
+	a, b = integers
+	read a and b
+	if a is greater than b then set a to b
+	for i = 2 to a inclusive set ll to ll * i
+	print ll
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	let a, b, x, i, k be long integers with k = 1
+	read a, b
+	x is equal to minimum of a and b
+	for i = 1 to x inclusive , k is equal to k * i
+	print k and newline
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	a,b=long long
+	read a,b
+	c=min(a,b)
+	ans=1
+	for i=1 to c inclusive multiply ans by i
+	print ans
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	a, b, c, d =integers with c = 1
+	Read a, b
+	set d to minimum value of a and b
+	for i = 1 to d exclusive, then set c to c * i
+	print c and a new line
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	a, b = long long
+	read a and b
+	if a is less than b then set a to a otherwise set a to b
+	set b to 1
+	for i = 2 to a inclusive set b to b * i
+	print b
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	declare integers a, b
+	while read a, b
+		declare integer t
+		let t be a
+		if b is less than a, let t be b
+		declare integer i
+		declare integer k = 1
+		for i = 1 to t inclusive, let k be k * i
+		print k and newline
+	}
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	create long long ints a and b
+	read a and b
+	let i and f = 1 be long long integers
+	loop until break
+		f = f * i
+		if i is equal to a or i is equal to b
+			print f
+			break
+		}
+	}
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+in long long function factorial taking n = long long
+	if n > 1
+		return n * factorial of n-1
+	else
+		return 1
+}
+int main() {
+	a, b, ans = long long
+	read a and b
+	set ans to min of a and b
+	print factorial of ans
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+declare facto with long long n as argument, returning long long
+	if n is 0 or n is 1, return 1 from function
+	declare long long array fact size 18 = {0}
+	let fact[0] be 1
+	for i = 1 to n inclusive, let fact[i] be fact[i-1] * i
+	return fact[n] from function
+}
+int main() {
+	declare long longs a, b
+	read a and b
+	print result of run facto with minimum of a and b as argument, "\n"
+	return 0;
+}
+```
+
+
+probid: 822A
+pseudo program:
+```
+int main() {
+	t, a, b, c, i, d, k =integers with i = 0, d = 1, k = 1
+	Read a, c
+	set i to minimum value of a and c
+	for t = 1 to i exclusive
+	print d and a new line
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create integer n
+	while read n is true
+		create long long answ with answ = n
+		for i = 1, a to n inclusive, incrementing i
+			read a
+			increment answ by long long casted i * ( a - 1 )
+		}
+		print answ print newline
+	}
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+function Fast_Read_Out
+define function Random
+	define unsigned long long seed
+	call asm with arguments "rdtsc" : "=A"(seed)
+	initialze random number generator with seed
+}
+unsigned long long function Time
+	unsigned long long time = clock() / 1000.00
+	return time
+}
+create constant long long inf with value (1e9) + 123
+a is an array of long longs with size 101
+dp is an long long array with size 101
+int main() {
+	invoke function Random
+	invoke function Fast_Read_Out
+	create long long n
+	read n
+	for i = 1 to n inclusive read a[i]
+	for i = 1 to n inclusive set dp[i] = to (a[i] - 1) * i + 1
+	create long long sum = 0
+	for i = 1 to n inclusive increase sum by dp[i]
+	print sum and a new line
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create integer n
+	read n
+	create long long array arr with size n
+	for i = 0 to n exclusive, read arr[i]
+	create long long ans with ans = 0
+	for i = 0 to n exclusive, set ans to ans + ( i + 1 ) * arr[i] - i
+	print ans print newline
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	n is long long
+	read n
+	declare long long called tot = 0
+	declare long long called input
+	for integer i = 1 to n inclusive
+		read input
+		increase tot by i * (input - 1)
+	}
+	increase tot by n
+	print tot and a new line
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create long long integers n, s, m with s = 0
+	read n
+	for i = 0 to n exclusive
+		read m
+		increment s by m + i * ( m - 1 )
+	}
+	print s print newline
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+n and ans are long longs with ans = 0
+int main() {
+	read n
+	for i = 1 to n inclusive
+		declare long long a
+		read a
+		increase ans by (a - 1) * (i - 1) + a
+	}
+	print ans and a new line
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	declare integer n
+	create long longs a and Ans and long long array ara with size 101
+	read n
+	read a
+	assign value of a to Ans
+	for integer i = 1 to n exclusive
+		read ara[i]
+		increase Ans by (ara[i] - 1) * (i + 1) + 1
+	}
+	print Ans
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	n = long long, a = array of 101 long long filled with 0, ans = 0
+	read n
+	for i=1 to n inclusive read a[i]
+	for i=1 to n inclusive sum (a[i]-1])*i+1 to ans
+	print ans
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+desperate_optimization is a void function with integer argument precision
+	cout.setf(ios::fixed)
+	cout.setf(ios::showpoint)
+	cout.precision(precision)
+}
+in the function hora with integer argument tc
+	create integer n
+	read n
+	declare long long variable tot = 0
+	for long long i = 1 to n inclusive
+		create long long x
+		read x
+		increase tot by (i) * (x - 1) + 1
+	}
+	print tot and '\n'
+}
+int main() {
+	call desperate_optimization with 10 as an argument
+	declare integer variable ntc = 1
+	for integer tc = 1 to ntc inclusive, call hora of tc
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create long long n
+	read n
+	declare long long ans = 0
+	for integer i = 0 to n exclusive
+		declare long long variable a
+		read a
+		increase ans by (i + 1) * (a - 1) + 1
+	}
+	print ans and a new line
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+create constant integer M with M = 100 + 10
+create long long integer a with size M
+int main() {
+	create integer n
+	read n
+	for i = 1 to n inclusive, read a[i]
+	create long long integer ans with ans = 0
+	for i = 1 to n inclusive, set ans to ans + (i - 1) * (a[i] - 1) + a[i]
+	print ans print newline
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	declare long long variables a, b, i and k where b = 0
+	read a
+	for i = 1 to a inclusive
+		read k
+		if i = 1 || k = 1
+			increase b by k
+		else
+			multiply k by i
+			decrease k by i - 1
+			increase b by k
+		}
+	}
+	print b and a new line
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+create long longs ans, n create long long array a with size 101
+int main() {
+	read n
+	for i = 1 to n inclusive, read a[i]
+	for i = 1 to n inclusive, set ans to ans + a[i] * i + 1 - i
+	print ans print newline
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create integer n
+	create long long array arr with size 102
+	read n
+	for i = 1 to n inclusive, read arr[i]
+	create long long sum with sum = 0
+	for i = 1 to n inclusive, increment sum by (arr[i]-1)*i
+	increment sum by n
+	print sum print newline
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+create long longs, n, ans, cnt, create long long array a with size 105
+int main() {
+	read n
+	for i = 0 to n exclusive, read a[i]
+	set ans to a[n-1]
+	for i = n - 2 to 0 inclusive, decrementing i, increment a[i] by a[i + 1] - 1, increment ans by a[i]
+	print ans print newline
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create long longs n and a
+	read n
+	create long long ans = 0
+	for long long i = 1 to n inclusive
+		read a
+		increase ans by (a - 1) * i + 1
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create long longs a, b, i, k, with b = 0
+	read a
+	for i = 1 to a inclusive
+		read k
+		if i is 1 or k is 1
+			increment b by k
+		else
+			set k to k * i
+			decrement k by i - 1
+			increment b by k
+		}
+	}
+	print b print newline
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+let a,i,k,n be unsigned long integers
+int main() {
+	read n
+	for i=1 to n inclusive
+		read a
+		k is equal to k + (a - 1) * i
+		increase k by 1
+	}
+	print k and endline
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	declare long longs n, a and ans
+	read n and a
+	set ans to a
+	for i = 2 to n inclusive
+		read a
+		increase ans by 1 + (a - 1) * i
+	}
+	print ans and a new line
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+create interger t
+create long integer a
+create long integer sum
+int main() {
+	while(t value is entered)
+		set sum to 0
+		for(int i=0 to t(exclusive))
+			read a
+			add (a-1) * i +a to sum
+		}
+		print out sum
+	}
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	let n be a long integer
+	read n
+	let total(0) be a long type integer
+	for ( long integer p=0 to n exclusive )
+		let m be a long integer
+		read m
+		let the value of total is equal to total + (m - 1) * (p + 1) + 1
+	}
+	print total and newline
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+create long longs ans, n, create long long array a with size 105
+int main() {
+	read n
+	for i = 1 to n inclusive, read a[i]
+	for i = 1 to n inclusive, set ans to ans + a[i] * i + 1 - i
+	print ans print '\n'
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	declare long long variable n
+	read n
+	long long total = 0
+	for long = 0 to n exclusive
+		create long long m
+		read m
+		increase total by (m - 1) * (p + 1) + 1
+	}
+	print total
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create long long n
+	create long long sum
+	while reading n
+		set sum to 0
+		for integer i = 1 to n inclusive
+			declare long long m
+			read m
+			increase sum by i * (m - 1) + 1
+		}
+		print sum
+	}
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+declare abs with long long, long long as arguments, returning long long
+declare solve with no arguments, returning void
+	create long longs n, a, t, with t = 0
+	read n
+	for i = 1 to n + 1 exclusive
+		read a
+		increment t by ((a - 1) * i + 1)
+	}
+	print t print "\n"
+}
+int main() {
+	create long long TESTS with TESTS = 1
+	while decrement TESTS is true, run solve
+	return 0;
+}
+declare abs with long longs a, b as arguments, returning long long
+	if a is greater than b
+		return a - b from function
+	else
+		return b - a from function
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+create constant integer INF with value 0x3f3f3f3f
+create integer array a with 105 elements
+int main() {
+	declare long long variables i, j, k and l where l = 0
+	create long longs n and m
+	read n
+	for i = 0 to n exclusive read a[i] and decrement it
+	create long long s = n
+	for i = 0 to n exclusive
+		if a[i], increment s by a[i] + a[i] * i
+	}
+	print s
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	create integer n
+	declare long long integer array a with size 150
+	declare long long integer variable sum = 0
+	while reading n
+		assign value of 0 to sum
+		for i = 1 to n inclusive read a[i]
+		for i = 1 to n inclusive
+			if i = 1
+				increase sum by a[1]
+			else
+				increase sum by (a[i] - 1) * i + 1
+			}
+		}
+		print sum
+	}
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	declare integer n
+	read n
+	declare long long array a with size n
+	read a[i] n times
+	declare long long variable sum = 0
+	for i = 0 to n exclusive
+		increase sum by a[i]
+		increase sum by (a[i] - 1) * i
+	}
+	print sum
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+int main() {
+	declare integer n and integer array a with size 101
+	read n
+	declare long long ans = 0
+	for i = 1 to n inclusive
+		read a[i]
+		increase ans by 1LL * (a[i] - 1) * (i - 1) + a[i]
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 103A
+pseudo program:
+```
+assign value 0x3f3f3f3f to constant integer inf
+assign value 10005 to constant integer MAXN
+assign value 19260817 to constant integer mod
+assign value 0x7fffffff to constant integer INF
+ans is an long long array with size 101
+int main() {
+	create integers n and x
+	read n
+	for i = 1 to n inclusive write input to ans[i]
+	declare long long variable sum = 0
+	for i = 1 to n inclusive, increase sum by ans[i] * i - i + 1
+	print sum and a new line
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	arr is a new array of integers with size 3 by 1005
+	define integers n and s
+	read standard input to n and s
+	in a for loop, change i from 0 to 2 exclusive incrementing i
+		change j from 1 to n inclusive in a loop and read input to arr[i][j] on each iteration
+	}
+	create integer variable with name cek
+	if arr[0][1] != 0 and (arr[0][s] != 0 or arr[1][s] != 0 )
+		change the value of cek to 1
+		if arr[0][s] is equal to 0
+			assign 0 to cek
+			for i from s + 1 to n inclusive incrementing i
+				if arr[0][i] and arr[1][i] are both not 0, change the value of cek to 1
+			}
+		}
+	else
+		change the value of cek to 0
+	print "YES" if cek is not 0, otherwise print "NO"
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	define new integers n and m, and arrays a and b with 1111 element
+	read from the input to n and m
+	read standard input to n elements of a, starting from the index 1
+	read from the input to n items of b, starting from the index 1
+	if a[1] is equal to 0
+		print "NO" to the standard output
+		return 0;
+	}
+	flag is a new integer variable with value 0
+	if a[m] is not 0
+		print "YES"
+	else
+		if b[m] is 0
+			print "NO"
+		else
+			for integer i = m + 1 to n inclusive
+				if both a[i] and b[i] are not 0
+					assign 1 to flag
+					print "YES"
+					return 0;
+				}
+			}
+			if flag is false, print "NO"
+		}
+	}
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	let n, s be integers
+	read n, s
+	a = array of integers of length n , b = array of integers of length n
+	for i = 0 to n exclusive , read a[i]
+	for i = 0 to n exclusive , read b[i]
+	if a[0] equals 0
+		print NO and newline
+		return 0;
+	else if a[s - 1] equals 0 and b[s - 1] equals 0
+		print NO and newline
+		return 0;
+	else if a[s - 1] equals 1
+		print YES and newline
+		return 0;
+	else if a[s - 1] equals 0 and b[s - 1] equals 1
+		the integer value of k = 0
+		for i = s to n exclusive
+			if a[i] equals 1 and b[i] equals 1
+				k is equal to 1
+				print YES and newline
+				return 0;
+			}
+		}
+		if k equals 0
+			print NO and newline
+			return 0;
+		}
+	}
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+n, s = int
+a, b = bool array of size 1111 ach
+int main() {
+	read n then s
+	for i = 1 to n inclusive read a[i]
+	for i = 1 to n inclusive read b[i]
+	if not a[1]
+		print "NO"
+	else if a[1] and a[s]
+		print "YES"
+	else
+		flag = int with flag = =
+		for i = s + 1 to n inclusive
+			if a[i]
+				if b[i] and b[s]
+					set flag to 1
+					break
+				}
+			}
+		}
+		if flag
+			print "YES"
+		else
+			print "NO"
+	}
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	let N and S be integers
+	read in N and S
+	decrement S
+	let a and b be arrays of integers of size N
+	read in N values into a
+	read in N values into b
+	if a[0] and a[S] are true
+		print YES
+		return 0;
+	}
+	for k = S + 1 to k < N
+		if a[0] and a[k] and b[k] and b[S] are true
+			print YES
+			return 0;
+		}
+	}
+	print NO
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+declare an arrays of ints a and b with 1005 elements
+int main() {
+	declare new int variables n and m
+	read n and m from the input
+	read n elements into array a from the input, starting from the index 1
+	read n elements into b, starting from the index 1
+	if a[1] is equal to 0
+		print "NO"
+	else if a[1] and a[m] are both equal to 1
+		print "YES"
+	else
+		if b[m] = 0
+			print "NO" to the output stream
+		else
+			declare new integer variable bj with value 0
+			in a for loop, change i from m + 1 to n inclusive
+				set the value of bj to 1 if a[i] and b[i] are both = 1
+			}
+			if bj is not 0
+				print "YES" to the standard output
+			else
+				print "NO"
+			}
+		}
+	}
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+create constant integer mx = 1000
+define new integers n and s
+create bool arrays a and b with size mx
+in the function solve
+	read input to n and s
+	declare new int variables t1 and t2 = 0
+	read n elements to the a
+	read n elements into items of b
+	if a[0] = 1, change the value of t1 to 1
+	if a[s - 1] = 1 or b[s - 1] = 1
+		in a for loop, change i from s - 1 to n exclusive incrementing i
+			if values of a[i] and b[i] are both = 1
+				set the value of t2 to 1
+				break
+			}
+	if t1 = 1 and (t2 = 1 or a[s - 1] = 1)
+		print "YES\n"
+	else
+		print "NO\n"
+}
+int main() {
+	call method solve()
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+let maxn be a constant integer 1e5 + 5
+let a, b be integer arrays of size maxn
+int main() {
+	n, m be integers
+	read n, m
+	for integer i = 0 to n inclusive, read a[i]
+	for integer j = 0 to n inclusive, read b[j]
+	if a[1] equal 0
+		print NO and newline
+		return 0;
+	}
+	if a[m] equal 1
+		print YES and endline
+		return 0;
+	}
+	for integer i = m to n inclusive
+		if a[i] ,b[i] ,b[m] all equal 1
+			print YES and endline
+			return 0;
+		}
+	print NO and newline
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+create function solve
+	long long integer as n,s
+	read n,s
+	long long integer as a[n],b[n]
+	input a[i]
+	input b[i]
+	if a[0] is 1 then do the following
+		if a[s - 1] is 1 then do the following
+			output YES\n
+		else
+			long long integer as ng long h = 0
+			for s to less than n do the following
+				if a[i] and b[i] is 1 then do the following
+					set h to 2
+					break
+				}
+			if h is 2 and b[s - 1] is 1 then do the following
+				output YES\n
+			else
+				output NO\n
+		}
+	else
+		output NO\n
+}
+int main() {
+	long long integer as t = 1
+	if t is true then run solve function
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	let n, s be long integers , a = array of integers of length 1001, b = array of integers of length 1001
+	read n , s
+	for long integer i = 1 to n inclusive , read a[i]
+	for long integer i = 1 to n inclusive, read b[i]
+	if a[1] equals 0
+		print NO and newline
+		return 0;
+	}
+	if a[s] equals 1
+		print YES and newline
+		return 0;
+	}
+	the boolean value of flag = false
+	for long integer i = s + 1 to n inclusive
+		if a[i] equals 1 and b[i] equals 1
+			flag is equal to true
+			stop
+		}
+	}
+	if flag is equal to false
+		print NO and newline
+		return 0;
+	}
+	if b[s] equals 1
+		print YES and newline
+		return 0;
+	}
+	print NO and newline
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	make ints n and s
+	read n and s
+	create integer array a of size n + 1 with {0}
+	make int array b of size n + 1 with {0}
+	for i = 1 to n, read a[i]
+	for i = 1 to n, read b[i]
+	if a[1] is equal to 0
+		print "NO\n"
+		return 0;
+	}
+	if a[s] is equal to 1
+		show "YES\n"
+		return 0;
+	}
+	for i = s + 1 to n
+		if a[i] is equal to 1 and b[i] is equal to 1 and b[s] is equal to 1
+			show "YES\n"
+			return 0;
+		}
+	}
+	display "NO\n"
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	define new integers n and s
+	read n and s from the input
+	new vector of integers forward with size = n + 1, filled with 0
+	declare vector of integers called backward with n + 1 element filled with 0
+	for integer i = 1 to n inclusive, read input to forward[i]
+	read n elements to backward, starting from the index 1
+	if forward[1] = 0
+		print "NO"
+	else
+		if forward[s] = 1
+			print "YES"
+		else
+			if backward[s] is equal to 1
+				declare boolean variable with name availabe and value false
+				for i from s + 1 to n inclusive incrementing i
+					if forward[i] and backward[i] = 1
+						assign true to availabe
+						break the loop
+					}
+				}
+				print "YES" if availabe is true, print "NO" otherwise
+			else
+				print "NO"
+			}
+		}
+	}
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+make integer arrays a of size 10000 and b of size 10000
+create bool ab = 0
+int main() {
+	make ints n, s, i, z = 1, x, and c
+	read n and s
+	set x to n + 1
+	for i = 1 to n, read a[i]
+	for i = 1 to n, read b[i]
+	if a[s] is equal to 1 and a[1] is equal to 1
+		set ab to 1
+	else do
+		for i = n to 1 by decreasing by 1
+			if a[i] is equal to 1 and b[i] is equal to 1
+				if i is greater than s and b[s] is equal to 1, set ab to 1
+			}
+		}
+	if a[1] is 0, set ab to 0
+	if ab is equal to 1
+		display "YES"
+	otherwise
+		output "NO"
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	n, s =integers
+	t1, t2 = array of 100000 integers each
+	Read n, s
+	Read n values into array t1
+	Read n values into array t2
+	if t1[0] is equal to 1
+		if t1[s - 1] is equal to 1
+			print YES and a new line
+			return 0;
+		}
+		if t2t[s - 1] is equal to 1
+			for i = s to n exclusive
+				if t1[i] is 1 and t2[i] is 1
+					print YES and a new line
+					return 0;
+				}
+			}
+		}
+	}
+	print NO and a new line
+	return 0;
+}
+```
+
+
+probid: 1055A
+pseudo program:
+```
+int main() {
+	let n and s be integers
+	read in n and s
+	let a be an array of integers of size n + 1, let b be an array of integers of size n + 1
+	read in n values into array a
+	read in n values into array b
+	if a[1] is equal to 1
+		if a[s] is equal to 1
+			print YES
+		else if b[s] is equal to 1
+			for i = s + 1 to i <= n
+				if a[i] is equal to 1 and b[i] is equal to 1
+					print YES
+					return 0;
+				}
+			}
+			print NO
+		or else
+			print NO
+	or else
+		print NO
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+let n be a integer
+the integer value of ans = -1
+the integer value of res = 0
+int main() {
+	read n
+	a = array of integers of length n
+	for i = 0 to n exclusive
+		read a[i]
+		if a[i] is equal to 1 , increment res by 1
+	}
+	if res is equal to n
+		print n - 1 and newline
+		return 0;
+	}
+	if n is equal to 1 and a[0] is equal to 1
+		print 0 and newline
+		return 0;
+	}
+	for j = 0 to n exclusive
+		for k = 0 to n exclusive
+			the integer value of cnt = 0
+			for l = 0 to n exclusive
+				if l >= k and l <= j
+					increment cnt by (1 - a[l])
+				else do the following
+					increment cnt by a[l]
+			}
+			ans is equal to maximum of ans and cnt
+		}
+	}
+	print ans and newline
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+create n
+ans = -1
+res=0
+int main() {
+	read n
+	create int a[n]
+	for i=0 to n exclusive
+		read a[i]
+		if a[i] = 1, increment res
+	}
+	if res=n
+		print n-1
+		return 0;
+	}
+	if n = 1 and a[0] = 1
+		print 0
+		return 0;
+	}
+	for j=0 to n exclusive
+		for k=0 to n inclusive
+			cnt=0
+			for l=0 to n exclusive
+				if l >= k and l <= j
+					cnt = cnt + !a[l]
+				else
+					set cnt = cnt + a[l]
+			}
+			set ans to max of ans and cnt
+		}
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	let max = 0, n, i, sum = 0, a[105], p be ints
+	read n
+	set p to 0
+	for i = 0 to n exclusive
+		read a at i
+		increment sum by a at i
+	}
+	if sum = n
+		print sum - 1
+		return 0;
+	}
+	for i = 0 to n exclusive
+		if a [i] = 0
+			increment p
+		else if a[i] = 1 and p < 0
+			reset p to 0
+		else if a[i] = 1 and p > 0
+			decrement p
+		if max < p then set max to p
+	}
+	increment sum by max
+	print sum
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	make ints n, a, cnt_1 = 0, cnt_0 = 0, and cnt_max0 = -1
+	read n
+	while n-- is truthy
+		read a
+		if a is equal to 1
+			add 1 to cnt_1
+			if cnt_0 is greater than 0, subtract 1 from cnt_0
+		}
+		if a is equal to 0
+			add 1 to cnt_0
+			if cnt_0 is greater than cnt_max0, set cnt_max0 is equal to cnt_0
+		}
+	}
+	make integer ans = cnt_1 + cnt_max0
+	display ans
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+cnt1, cnt0 = int array of size 105 each
+int main() {
+	n = int
+	read n
+	a = int array of size n + 1
+	for i = 1 to n inclusive read a[i]
+	set cnt1[0] to 0
+	set cnt0[0] to 0
+	maxv = int with maxv = -100
+	for i = 1 to n inclusive
+		set cnt1[i] to cnt1[i - 1] + a[i]
+		set cnt0[i] to i - cnt1[i]
+	}
+	for i = 1 to n inclusive
+		for j = i to n inclusive
+			if (cnt0[j] - cnt0[i - 1]) - (cnt1[j] - cnt1[i - 1]) + cnt1[n] > maxv set maxv to (cnt0[j] - cnt0[i - 1]) - (cnt1[j] - cnt1[i - 1]) + cnt1[n]
+		}
+	}
+	print maxv
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	n = integer
+	read n
+	arr = array of integers of size n
+	set cnt = 0
+	set def = -1
+	for i = 0 to n exclusive
+		read arr[i]
+		a, b = integers set a and b = 0
+		for j = i to 0 inclusive
+			if arr[j] = 0
+				increment a
+			else
+				increment b
+			set d = max of def and a-b
+		}
+		if arr[i] = 1 increment cnt
+	}
+	print cnt + def
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+the 1001th element of array a is equal to 0
+int main() {
+	let n, c be integers with c = 0
+	read n
+	for i = 0 to n exclusive
+		read a[i]
+		if a[i] is equal to 1
+			a[i] = -1
+			increment c by 1
+		else do the following
+			a[i] is equal to 1
+	}
+	let ans, maxx be integers with ans = a[0], maxx = a[0]
+	for i = 1 to n inclusive
+		maxx = maximum of a[i] and maxx + a[i]
+		ans = maximum of ans and maxx
+	}
+	print c + ans and newline
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	let n, a, count1(0), extra0(0), extra0max(-1) be integers
+	read n
+	while n is decremented by 1
+		read a
+		if a is equal to 1
+			increment count1 by 1
+			if extra0 is greater than 0 , decrement extra0 by 1
+		else do the following
+			increment extra0 by 1
+			if extra0 is greater than extra0max , extra0max is equal to extra0
+		}
+	}
+	print count1 + extra0max and newline
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	create int a[105], n, ans, set ans =0
+	read n
+	for i=0 to n exclusive, read a[i]
+	for i=0 to n exclusive
+		for j=0 to i inclusive
+			v=0
+			for k=0 to n exclusive
+				if k >=j and k<= i
+					set v=v+a[k]=0
+				else
+					v= v+a[k]
+			set ans to max of ans and v
+		}
+	print ans and a newline
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	a = int array of size 105
+	n, ans = int with ans = 0
+	read n
+	read n values into a
+	for i = 0 to n
+		for j = 0 to i inclusive
+			v = int with v = 0
+			for k = 0 to n
+				if k >= j and k <= i
+					increment v by not a[k]
+				else
+					increment v by a[k]
+			set ans to max of ans, v
+		}
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	create int n
+	read n
+	create vector int a(n)
+	cnt =0
+	for i=0 to n exclusive
+		read a[i]
+		if a[i] = 1
+			a[i] = -1
+			increment cnt
+		}
+		if a[i] = 0, a[i] = 1
+	}
+	set gmax = INT_MIN, lmax = 0
+	for i=0 to n exclusive
+		set lmax to lmax + a[i]
+		set gmax = max(gmax, lmax)
+		if lmax <0, lmax =0
+	}
+	print cnt + gmax
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	create ints n, a, count1(0), extra0(0), and extra0max(-1)
+	read n
+	while n-- is truthy
+		read a
+		if a is equal to 1
+			add 1 to count1
+			if extra0 is greater than 0, subtract 1 from extra0
+		else do
+			add 1 to extra0
+			if extra0 is greater than extra0max, set extra0max to extra0
+		}
+	}
+	show result of count1 + extra0max
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+declare constant integer N = 1e6+7
+int main() {
+	declare integer n
+	declare integer cnt = 0
+	declare integer ans = 0
+	read n
+	declare integer array a size n
+	for i = 0 to integer casted ( n - 1 ) inclusive
+		read a[i]
+		if a[i] is true
+			let a[i] be -1, increment cnt
+		else
+			let a[i] be 1
+	}
+	declare integer mx = INT_MIN
+	for i = 0 to integer casted ( n - 1 ) inclusive
+		increment ans by a[i]
+		if ans is greater than mx, let mx be ans
+		if ans less than 0, let ans be 0
+	}
+	print mx + cnt and '\n'
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	create ints n, a, count1(0), extra0(0), and extra0max(-1)
+	read n
+	while n-- is truthy
+		read a
+		if a is equal to 1
+			add 1 to count1
+			if extra0 is greater than 0, set extra0 to extra0 - 1
+		else do
+			set extra0 to extra0 + 1
+			if extra0 is greater than extra0max, set extra0max to extra0
+		}
+	}
+	display the result of count1 + extra0max
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+let a be an integer of arrays of size 1000
+define function flip with takes in integers n, i, and j as arguments
+	let b be an integer of arrays of size 1000
+	iterate for n times, set b[i] to a[i] n times
+	let count be an integer and set its value to 0
+	for k = i iterate until k is less than or equal to j
+		if b[k] is equal to 0
+			set b[k] to 1
+		or else
+			set b[k] to 0
+	}
+	iterate for n times
+		if b[k] is equal to 1, increment count
+	}
+	return the value of count from the function
+}
+int main() {
+	let n be an integer
+	read in n
+	read in a[i] n times
+	let max be an integer and set its value to -1
+	iterate for n times
+		for j = i iterate while j is less than n
+			let count be an integer and set its value to flip(n, i, j)
+			if count is greater than max, set max to count
+		}
+	}
+	print max
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	create ints n, x, one_cnt = 0, len_max = 0, and len_cur = 0
+	read n
+	for i = 0 to n exclusive
+		read x
+		if x is equal to 0
+			if ++len_cur is greater than len_max, set len_max is equal to len_cur
+		else do
+			if --len_cur is less than 0, set len_cur to 0
+			add 1 to one_cnt
+		}
+	}
+	display (one_cnt + (len_max == 0 ? -1 : len_max))
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	declare new ints n, x and mx where mx = 0, and an int array a with size 101
+	change a[0] to 0
+	read n
+	change i from 1 to n inclusive in a for loop
+		read input to x
+		assign a[i - 1] + x to a[i]
+	}
+	for integer i = 1 to n inclusive
+		in a for loop, change j from i to n inclusive, assigning the new value = max of a[n] + j - i + 1 - 2 * (a[j] - a[i - 1]) and mx to mx on each iteration
+	print mx
+	return 0;
+}
+```
+
+
+probid: 327A
+pseudo program:
+```
+int main() {
+	declare integer n
+	declare integer array num size 100
+	declare integer array a size 100
+	read n
+	declare integer count = 0
+	for i = 0 to n exclusive
+		read num[i]
+		if num[i] is 1
+			let a[i] be -1
+			increment count
+		else
+			let a[i] be 1
+		}
+	}
+	declare integer max = -2
+	declare integer sum = 0
+	for i = 0 to n exclusive
+		increment sum by a[i]
+		if sum is greater than max, let max be sum
+		if sum is less than 0, let sum be 0
+	}
+	print max + count and newline
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	let n, k be long integers
+	read n, k
+	let t be a long integer with t = n / k
+	if t modulo 2 is true
+		print YES and newline
+	else do the following
+		print NO and newline
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+declare long longs n and m
+int main() {
+	read n and m
+	if n / m % 2 != 0
+		print "YES\n"
+	else
+		print "NO\n"
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long long n, k
+	print n, k
+	if n/k is even
+		print NO
+	else
+		print YES
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k, x = long long
+	read n then k
+	set x to n / k
+	if x is even
+		print "NO"
+	else
+		print "YES"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k = long long
+	read n, k
+	if n / k is odd
+		print YES
+	else
+		print NO
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	declare long long int variable n
+	create long long int k
+	read n
+	read input to k
+	if (n / k) is odd
+		print "YES"
+	else
+		print "NO"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long longs n and k
+	read n and k
+	if (n / k) is even
+		print "NO"
+	else
+		print "YES"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k = long long
+	read n, k
+	if the result of n / k ends in a 1 in binary
+		print YES
+	else
+		print NO
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k = long long
+	read n, k
+	print YES if the last bit of n / k ends in 1 else print NO
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, x =integers
+	Read n and x
+	if (n / x) modulo 2 is 0
+		print NO and a new line
+	else do the following
+		print YES and a new line
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long longs n and k
+	read input to n and k
+	if n / k is odd
+		print "YES\n"
+	else
+		print "NO\n"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k =integers
+	Read n and k
+	if (n / k) modulo 2 is 0
+		print NO and a new line
+	else do the following
+		print YES and a new line
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k =integers
+	Read n and k
+	th = integer, set to n / k
+	if th is odd
+		print YES and a new line
+	else do the following
+		print NO and a new line
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	let st, cross, t_turn be long integers
+	read st , cross
+	the value of t_turn is equal to st / cross
+	if not t_turn & 1
+		print NO and newline
+	else do the following
+		print YES and newline
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	declare long long variables n and k
+	read n and k
+	declare long long variable count = n / k
+	if count is even
+		print "NO"
+	else
+		print "YES"
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	declare unsigned long long int variables k and n
+	read n and k
+	if (n / k) & 1 is not 0
+		print "YES"
+	else
+		print "NO"
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long long variables n and k
+	read n and k
+	print the result of ((n / k) & 1 ? "YES" : "NO")
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+n, k, x = long long
+int main() {
+	read n then k
+	set x to n / k
+	if x is even
+		print "NO"
+	else
+		print "YES"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n,k,s=long long int
+	while read n,k
+		s=n/k
+		if s is even
+			print "NO"
+		else
+			print "YES"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long longs n, k and x
+	read input to n and k
+	assign n / k to x
+	if x is even
+		print "NO"
+	else
+		print "YES"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long longs n, k
+	read n read k
+	if ( n / k ) % 2 is 0
+		print "NO" print newline
+	else
+		print "YES" print newline
+	}
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+n, k, x = integers
+int main() {
+	Read n and k
+	set x to n / k
+	if x is even
+		print NO and a new line
+	else do the following
+		print YES and a new line
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	declare long longs n and m
+	read n and m
+	if n / m is odd
+		print "YES\n"
+	else
+		print "NO\n"
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+declare READ with strings INPUT, OUTPUT with INPUT default "NO", OUTPUT default "NO" as arguments, returning void
+	if INPUT is not "NO", resuse stream stdin to open c string of INPUT in read mode
+	if OUTPUT is not "NO", reuse stream stdout to open c string of OUTPUT in write mode
+}
+int main() {
+	create long longs n, k
+	read n read k
+	print "YES" if ( n / k ) % 2 is true, else "NO", print "\n"
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k =integers
+	Read n and k
+	if (n / k) modulo 2 is 0
+		print NO and a new line
+	else do the following
+		print YES and a new line
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long long integers n, k, m
+	read n read m
+	set m to 2 * k
+	if n % m is greater than or equal to k
+		print "YES" print newline
+	else
+		print "NO" print newline
+	}
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k =integers
+	Read n and k
+	if (n / k) modulo 2 is 0
+		print NO and a new line
+	else do the following
+		print YES and a new line
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	declare long longs n and k
+	read n and k
+	print "NO\n" if (((n / k) & 1LL) == 0 or "YES\n" otherwise
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	define integers n, k
+	read n, k
+	define integer h
+	set h to quotient of n, k
+	if h is even
+		print "NO" and a newline
+	else
+		print "YES" and newline
+	}
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+in function solve
+	n, k = long long int
+	read n then k
+	pre = long long int with pre = n / k
+	if pre is not even
+		print "YES"
+	else
+		print "NO"
+	}
+}
+int main() {
+	t = long long int with t = 1
+	loop t times call solve
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long long n and k
+	read n, k
+	if n/k is even
+		print NO
+	else
+		print YES and a newline
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+create constant integer N = 1e5 + 10 and INF = 1e9 + 7
+int main() {
+	create long long integers n and k
+	read n and k
+	print "YES" if (n / k) % 2 is true or "NO" if not
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create unsigned long longs n, k and res
+	read n and k
+	assign n / k to res
+	if res & 1 = 1
+		print "YES\n"
+	else
+		print "NO\n"
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+declare long long variables n, k and x
+int main() {
+	read n and k
+	set x to n / k
+	if x is even
+		print "NO"
+	else
+		print "YES"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	n, k =integers
+	Read n and k
+	print YES if n / k bitwise and 1 is true, if ok is false print NO and a new line
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	declare long long int variables x, a and b
+	read input to a and b
+	change x to a / b
+	if x is even
+		print "NO"
+	else
+		print "YES"
+	}
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+create long longs n and m
+int main() {
+	read n and m
+	if n / m % 2 is true
+		print "YES\n"
+	else
+		print "NO\n"
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long long n, k
+	print n, k
+	set turnsDone = n / k
+	assign n mod k to remaining
+	if turnsDone mod 2 = 1
+		print YES and a newline
+	else
+		print NO and a newline+
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	create long longs n, k
+	read n read k
+	if ( n / k ) % 2 is not 0
+		print "YES" print newline
+	else
+		print "NO" print newline
+	return 0;
+}
+```
+
+
+probid: 832A
+pseudo program:
+```
+int main() {
+	let long long ints n and k
+	read n and k
+	if n / k modulo 2 is not equal to 0
+		print "YES\n"
+	else
+		print "NO\n"
+	}
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs n, m, green, blue, yellow, foo, foobar
+	read n read m read yellow read green read blue
+	set foobar to ( blue * 3 ) + green
+	set foo to ( yellow * 2 ) + green
+	print maximum of ( 0LL and foobar - m ) + maximum of ( 0LL and foo - n ) print newline
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs yc, bc, yb, gb, bb
+	read yc read bc
+	read yb read gb read bb
+	create long long yelo, blu
+	set yelo to yb * 2 + gb
+	set blu to 3 * bb + gb
+	set yelo to yelo - yc
+	set blu to blu - bc
+	if yelo is greater than or equal to 0 and blu is greater than or equal to 0
+		print yelo + blu print newline
+	else if yelo is less than 0 and blu is greater than or equal to 0
+		print blu print newline
+	else if yelo is greater than or equal to 0 and blu is less than 0
+		print yelo print newline
+	else
+		print 0 print newline
+	}
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long long integers y, b, ye, gr, bl, a, c, ans with ans = 0
+	read y read b read ye read gr read bl
+	set a to ( 2 * ye ) + gr
+	set c to ( 3 * bl ) + gr
+	if y - a is less than 0, increment ans by a - y
+	if b - c is less than 0, increment ans by c - b
+	print ans print newline
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	set a, b = 0 as large integer
+	read a and b
+	set x, y, z = 0 as large integer
+	read x y x
+	set Y, B, t = 0 as large integer
+	set Y = (2*x) + (1*y)
+	set B = (1*Y) + (3*z)
+	if Y > a
+		Y = Y - a
+	else
+		Y = 0
+	}
+	if B > b
+		B = B - b
+	else
+		B = 0
+	}
+	t = Y + B
+	print t
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	let a, b, x, y, z = long long
+	read a,b,x,y,z
+	let yellow = long long = 2*x+y
+	let blue = long long = y+3*z
+	res = long long = 0
+	if a is less than yellow, res = res + yellow - a
+	if b is less than blue, res = res + blue - b
+	print res
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	declare long long integer variables n, t, m and k
+	declare long long integer variables x, y and z
+	declare long long integer variables a and b
+	read a and b
+	read x, y and z
+	declare long long integer variables yn and bn
+	yn = (x * 2 + y)
+	declare long long integer variable dif = yn - a
+	declare long long integer need = 0
+	if dif >= 0, add dif to need
+	bn = (y + z * 3)
+	assign value of (bn - b) to dif
+	if dif >= 0, add dif to need
+	print need
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+let N be a constant integer set to 1e6 + 10
+let mod be a constant integer set to 998244353
+a, b, x, y, z, q, p, r = long longs
+int main() {
+	read a, b, x, y and z
+	increment q by 2 * x
+	increment q by y
+	increment p by y
+	increment p by 3 * z
+	print max(r, q - a) + max(r, p - b)
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+let n, m, a, b, c be long integers
+let Yellow, Blue, ans be long integers
+int main() {
+	read n,m,a,b,c
+	Yellow is equal to a * 2 + b
+	Blue is equal to b + c * 3
+	if (Yellow is greater than n) , ans = ans + Yellow - n
+	if (Blue is greater than m) , ans = ans + Blue - m
+	print ans and newline
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long long integers a, b, x, y, z, c, d, sum
+	read a read b
+	read x read y read z
+	set x to x * 2 + y
+	set z to z * 3 + y
+	if a is greater than x
+		set c to 0
+	else
+		set c to x - a
+	if b is greater than z
+		set d to 0
+	else
+		set d to z - b
+	print c + d print newline
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+create long long a, b, x, y, z, na, nb, zer with zer = 0
+int main() {
+	read a read b read x read y read z
+	set na to x * 2 + y
+	set nb to z * 3 + y
+	print maximum of ( maximum of ( na - a and zer ) + maximum of ( nb - b and zer ) and zer ) print '\n'
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	declare long longs n and m
+	read n and m
+	let a, b and c be long longs
+	read a, b and c
+	create long long ans with value = max of 0 and b + (2 * a) - n
+	increase ans by max of 0 and b + (3 * c) - m
+	print ans and a new line
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs a, b
+	read a read b
+	create long longs x, y, z
+	read x read y read z
+	create long long ans with ans = 0
+	if y is greater than a
+		increment ans by y - a
+		set a to 0
+	else
+		decrement a by y
+	}
+	if y is greater than b
+		increment ans by y - b
+		set b to 0
+	else
+		decrement b by y
+	}
+	if x * 2 is greater than a, increment ans by x * 2 - a
+	if x * 3 is greater than b, increment ans by z * 3 - b
+	print ans print newline
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs a, b
+	read a read b
+	create long longs x, y, z
+	read x read y read z
+	create long longs reala, realb with reala = 2 * x + y, realb = y + 3 * z
+	print maximum of ( reala - a and 0ll ) + maximum of ( realb - b and 0ll ) print newline
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs a, b and ans, with ans = 0
+	read a and b
+	let a1, a2 and a3 be long longs
+	read a1, a2 and a3
+	decrease a by a1 * 2
+	decrease a by a2
+	decrease b by a2
+	decrease b by 3 * a3
+	if a is less than 0, increase ans by a
+	if b is less than 0, increase ans by b
+	print negative ans and a new line
+	;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+n, m, a, b and c are long longs
+declare long longs Yellow, Blue and ans
+int main() {
+	read n, m, a, b and c
+	Yellow = a * 2 + b
+	Blue = b + c * 3
+	if Yellow >= n and Blue >= m
+		increase ans by Yellow + Blue - n - m
+	else if Yellow < n and Blue is greater than m
+		increase ans by Blue - m
+	else if Yellow > n and Blue is less than m
+		increase ans by Yellow - n
+	print ans and a new line
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs i, c, a, b, x, y, z, with c = 0
+	read a read b read x read y read z
+	decrement a by x * 2
+	decrement a by y
+	decrement b by y
+	decrement b by 3 * z
+	if a is less than 0, increment c by absolute value of a
+	if b is less than 0, increment c by absolute value of b
+	print c print newline
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	a, b, x, y and z are long longs
+	read a, b, x, y and z
+	create long long ans = 0
+	if y <= a
+		decrease a by y
+	else
+		increase ans by y - a
+		assign value of 0 to a
+	}
+	if y <= b
+		decrease b by y
+	else
+		increase ans by y - b
+		set value of b to 0
+	}
+	if x * 2 <= a
+		decrease a by x * 2
+	else
+		increase ans by 2 * x - a
+		a = 0
+	}
+	if z * 3 <= b
+		decrease b by z * 3
+	else
+		increase ans by z * 3 - b
+		set value of b to 0
+	}
+	print ans and a new line
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long long integers n, m
+	read n read m
+	create long long integers x, y, z
+	read x read y read z
+	create long long integer ans with ans = 0
+	if n is greater than or equal to 2 * x
+		set n to n - 2 * x
+	else
+		increment ans by 2 * x - n
+		set n to 0
+	}
+	if m is greater than or equal to 3 * z
+		set m to m - 3 * z
+	else
+		increment ans by 3 * z - m
+		set m to 0
+	}
+	if n is less than y, increment ans by y - n
+	if m is less than y, increment ans by y - m
+	print ans print newline
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs a, b, x, y, z
+	read a read b read x read y read z
+	create long long ans with ans = 0
+	create long longs sy, sb
+	set sy to 2 * x + y - a
+	if sy is less than 0, set sy to 0
+	set sb to 3 * z + y - b
+	if sb is less than 0, set sb to 0
+	increment ans by sy + sb
+	print ans print '\n'
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	let i, c, a, v, x, y, z be long long with c = 0
+	read a, b, x, y and z
+	let a = a - x*2
+	let a = a - y
+	let b = b - y
+	let b = b - 3*z
+	if a is less than 0 set c = c+ absolute value of a
+	if b is less than 0 set c = c+ absolute value of b
+	print c and new line
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	a, b, ans = long longs
+	read a and b
+	x, y, z = long longs
+	read x, y and z
+	ye = long long integer set to (2 * x) + y
+	bl = long long integer set to y + (3 * z)
+	n = long long integer set to ye - a
+	m = long long integer set to (bl - b
+	if n is less than 0 set n to 0
+	if m is less than 0 set m to 0
+	set ans to n + m
+	print ans
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	declare long long variables a, b, c, d, e and ans, with ans = 0
+	read a, b, c, d and e
+	if c * 2 + d - a is greater than 0, add (c * 2 + d) - a to ans
+	if d + e * 3 - b is greater than 0, add (d + e * 3) - b to ans
+	print ans and a new line
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	A,B =integers
+	x, y, z = integers
+	Read A and B
+	Read x, y, z
+	yello, green, bule = integers and all set to 0
+	set yello to x * 2 + y
+	set bule to z * 3 + y
+	set sum1 to yello - A
+	set sum2 to bule - B
+	if sum1 is less than 0, then set sum1 to 0
+	if sum2 is less than 0, then set sum2 to 0
+	print sum1 + sum2 and a new line
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	declar longs A, B, x, y, z, and e to be zero
+	input A, B, x, y, and z
+	if A is less than double x plus y, increment a by x * 2 + y - A
+	if B is less than y plus z times 3, increment a by y + 3 * z - B
+	print a and endline
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs n, m, a, b, c, ans1, ans2 and sum, with ans1, ans2 and sum = 0
+	read n and m
+	read a, b and c
+	ans1 = a * 2 + b * 1
+	ans2 = b * 1 + c * 3
+	sum = ans1 - n if ans1 > n, or 0 if it is not
+	increase sum by ans2 - m if ans2 > m
+	print sum and a new line
+	return 0;
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+create constant integer N with N = 1 bitshift left 20
+int main() {
+	create long longs a, b
+	read a read b
+	create long longs ye, bl, g
+	read ye read g read bl
+	create long long y1 with y1 = 2 * ye
+	create long long y2 with y2 = g
+	create long long b1 with b1 = g
+	create long long b2 with b2 = 3 * bl
+	create long longs ans1, ans2
+	if a is greater than or equal to y1 + y2
+		set ans1 to 0
+	else
+		set ans1 to absolute value of ( a - ( y1 + y2 ) )
+	if b is greater than b1 + b2
+		set ans2 to 0
+	else
+		set ans2 to absolute value of ( b - ( b1 + b2) )
+	print ans1 + ans2 print newline
+}
+```
+
+
+probid: 912A
+pseudo program:
+```
+int main() {
+	create long longs a, b, x, y, z, q, w, with q = 0, w = 0
+	read a read b
+	read x read y read z
+	set q to 2 * x + y
+	set w to y + 3 * z
+	create long long ans with ans = 0
+	if q - a is greater than 0, set ans to q - a
+	if w - b is greater than 0, increment ans by w - b
+	print ans print '\n'
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+let const int maxn = 1e5 + 10
+create ints a, b, c, and n
+int main() {
+	while cin >> a >> b >> c >> n is truthy
+		if a is less than c or b is less than c
+			print -1
+		else
+			let int num = (a - c) + (b - c) + c
+			if num is greater than or equal to n
+				print -1
+			else
+				print n - num
+			}
+		}
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	a, b, c, n = integers
+	read a, b, c, n
+	d = integer with d = a - c
+	e = integer with e = b - c
+	f = integer with f = n - d - e - c
+	if d >= 0 and e >= 0 and c >= 0 and f > 0
+		print f
+	else
+		print -1
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	declare long long ints a, b, c and n
+	read a, b, c and n
+	create integer temp = min of a and b
+	if c is greater than temp
+		print "-1\n"
+		return 0;
+	}
+	if (a + b) - c is less than n
+		print n - ((a + b) - c)
+	else
+		print "-1\n"
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	a, b, c, n = integers
+	while read a, b, c, n
+		res = integer with res = -1
+		if (a <= n) and (b <= n) and (c <= n)
+			onlyA = integer with onlyA = a - c
+			onlyB = integer with onlyB = b - c
+			if (onlyA >= 0 and onlyB >= 0) and (onlyA + onlyB < n), res = n - onlyA - onlyB - c
+		}
+		if res is 0, res = -1
+		print res
+	}
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	let a, b, c, d be ints
+	read a, b, c, d
+	if a + b - c >= d or c > a or c > b
+		print -1
+	else
+		print d - (a + b - c)
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+create integers a, b, c, n, i
+int main() {
+	read a read b read c read n
+	if a + b - c + 1 is greater than n or c is greater than a or c is greater than b or c is greater than a + b or c is greater than n
+		print -1 print newline
+	else
+		print n + c - a - b print newline
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+let A, B, C, N be ints
+int main() {
+	read A, B, C, N
+	let con be a false bool
+	if A > N or B > N or C > N then change con to true
+	if C > A or C > B then set con to true
+	let T = A + B - C = int
+	if T >= N, change con to true
+	if con is true print -1 else print N - T
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integers a, b, c, n and sum
+	read a, b, c and n and loop further
+		set sum to a + b - c
+		if sum >= n or a < c or b < c
+			print "-1"
+			skip the rest of the loop
+		else
+			print n - sum
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	declare integers a, b, c and n
+	read input to a, b, c and n
+	declare integer x = n - (a - c + b)
+	if x < 1 or a < c or b < c or a > n or b > n or c > n
+		print "-1\n"
+	else
+		print x
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	flag =0
+	create long long ans
+	res = long long
+	create int a, b, c and n
+	read a, b, c and n
+	if c>a or c>b
+		set flag to 1
+	else
+		assign a + b - c to res
+		set ans to n - res
+	}
+	if flag equal to 1
+		print -1
+	else
+		if ans <= 0
+			print -1
+		else
+			print ans and a newline
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integer a, b, c, n
+	get a, b, c, n
+	if a+b-c less than n and c less than or equal to a and b then
+		print n+c-a-b
+	else do the following
+		print "-1\n"
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integers n, a, b, c
+	read a, b, c and n
+	if a<c or b<c
+		print -1
+		return 0;
+	}
+	set ans to n - (a + b - c)
+	if ans >= 1
+		print ans
+	else
+		print -1
+	}
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	declare int variables A, B, C and N
+	read input to A, B, C and N
+	if ((A + B - C) < N) and (A >= C) and (B >= C)
+		print N - (A + B - C)
+	else
+		print "-1"
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+set INF to 0x3f3f3f3f
+int main() {
+	create int i, j, k
+	let n, m, t be int
+	create integers a, b, c, d
+	read a, b, c, d
+	if c>b or c>a
+		print -1
+		return 0;
+	}
+	set a to a + b - c
+	set d = d-a
+	if d<1 or a<0
+		print -1
+	otherwise
+		print d and a newline
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+a, b, c, n = integers
+int main() {
+	read a, b, c, n
+	num = integer with num = a + b - c
+	t = integer with t = n - 1
+	if t >= num and num >= 0 and a >= c and b >= c
+		print t - num + 1
+	else
+		print -1
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integers a, b, c, n
+	read a read b read c read n
+	if a is greater than n or c is greater than b or c is greater than a or ( a + b - c is greater than or equal to n )
+		print -1 print newline
+		return 0;
+	}
+	if n - a - b + c is greater than or equal to 1
+		print n - a - b + c print newline
+	else
+		print -1 print newline
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+create ints a, b, c and n
+function solve that returns integer
+	declare int variable k = a + b - c
+	if c is greater than min of a and b, return -1
+	if k is less than 0, return -1
+	if n - k is less than 1, return -1
+	return n - k
+}
+int main() {
+	read a, b, c and n
+	print the result of solve() and "\n"
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	a, b, c, d = int
+	read a then b then c then d
+	temp = int with temp = d - (a + b - c)
+	if c is greater than a or c is greater than b or a + b - c is greater or equal to d
+		print -1
+	else
+		print temp
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integers A, B, C and N
+	read A, B, C and N
+	if (A + B - C<= N - 1) and (A < N and B < N and C <= A and C <=B )
+		print N - (A + B - C)
+	else
+		print -1
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+create constant integer MAX with MAX = 2e5 + 5
+create constant integer INF with INF = 0x3f3f3f3f
+create map mp from character to integer
+create map iterator it from character to integer
+int main() {
+	create integers i, j, k, n, m, a, b, c
+	read a read b read c read n
+	if a + b - c is greater than or equal to n or c is greater than a or c is greater than b
+		print "-1"
+		return 0;
+	}
+	print n - ( a + b - c ) print newline
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create long longs a, b, c and d
+	read a, b, c and d and loop further
+		declare long long ans = d - a - b + c
+		if ans > 0 and a >= c and b >= c
+			print ans
+		else
+			print -1
+	}
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integers a, b, c, n, output
+	read a read b read c read n
+	set output to n - (a + b - c)
+	if (a + b - c) is greater than or equal to n or c is greater than a or c is greater than b
+		print -1 print newline
+	else
+		print output print newline
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	a, b, c, n = integers
+	read a, b, c, n
+	if a < c or b < c
+		print -1
+		return 0;
+	}
+	all = integer with all = a + b - c
+	if all <= n - 1
+		print n - all
+	else
+		print -1
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	a, b, c, n = int
+	read a then b then c then n
+	if (a + b - c) >= n or a < c or b < c
+		print "-1"
+	else
+		print n - a - b + c
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+create constant int N = 400000 + 10
+int main() {
+	let ints x, y, z, and n
+	read x, y, z, and n and while x, y, z, and n are truthy
+		set x to x - z
+		set y to y - z
+		let int ans = n - x - y - z
+		if x is less than 0 or y is less than 0 or ans is less than or equal to 0
+			print -1
+		else
+			print ans
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+declare integer variables a, b, c and n
+declare integers x, y and z
+int main() {
+	read a, b, c and n and loop further
+		assign a - c to x
+		assign b - c to y
+		change z to x + y + c
+		if z >= n or a < c or b < c
+			print "-1"
+		else
+			print n - z
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integers a, b, c and n
+	loop, reading a, b, c and n from the input
+		create int ans = a + b - c
+		change ans to n - ans
+		if ans <= 0 or a < c or b < c
+			print -1
+		else
+			print ans
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create integers a, b, c and n
+	read input to a, b, c and n
+	declare integer sum = a + b - c
+	if sum >= n or a > n or b > n or c > n or n = 0 or c > a or c > b
+		print -1
+	else
+		print n - sum
+	}
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create int a, b, c, n
+	read a, b, c, n
+	if a less than c or b <c
+		print -1 and a newline
+		return 0;
+	}
+	set ans to n - (a + b - c)
+	if ans less than 1
+		print -1 and a newline
+	else
+		print ans
+	}
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	create long long ints a, b, c, n, k
+	read a, b, c, and n
+	set k to a + b - c
+	set k to n - k
+	if k is greater than or equal to 1 and c is less than or equal to a and c is less than or equal to b
+		print k
+	else
+		print -1
+	return 0;
+}
+```
+
+
+probid: 991A
+pseudo program:
+```
+int main() {
+	declare ints a, b, c and d
+	read a, b, c and d
+	if a + b - c >= d or c > a or c > b
+		print "-1"
+	else
+		print d - (a + b - c)
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	create int n
+	read n
+	create vector in a(n)
+	mx = 0
+	for i=0 to n exclusive
+		read a[i]
+		mx = max of mx and a[i]
+	}
+	ans = 1e9
+	for k=mx to 1e5 inclusive
+		create int x and y
+		set x and y to 0
+		for i=0 to n exclusive
+			assign x + a[i] to x
+			set y = t + k - a[i]
+		}
+		if y greater than x
+			print k and a newline
+			return 0;
+		}
+	}
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	declare int n
+	read n
+	sum, x and mx are integers with sum and mx = 0
+	for i = 0 to n exclusive
+		read x
+		add x to sum
+		assign max of mx and x to mx
+	}
+	multiply sum by 2
+	increment sum
+	print max of sum / n rounded up and mx
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+create integers n, ans, ma and sum, and integer array a with 105 elements
+define function gets
+	create integer v with value 0
+	assign value 0 to boolean f
+	ch = character
+	read ch from the input and continue the loop if ch is not a digit
+		if ch = '-', set f to 1
+	assign value of ch - 48 to v
+	read ch from the input and continue the loop if ch is a digit, changing v to v * 10 + ch - 48
+	return -v if f is true, or v otherwise
+}
+int main() {
+	assign result of gets() to n
+	for i = 1 to n inclusive, set a[i] to the result of gets(), ma to max of ma and a[i], and increase sum by a[i]
+	ans = sum * 2 / n + 1
+	ans = max of ans and ma
+	print ans
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	declare integer variable n
+	read n
+	create integer pointer a pointed to new array of integers with n elements
+	declare int sum = 0
+	declare int max
+	loop i from 0 to n exclusive
+		read input to a[i]
+		set sum to sum + a[i]
+		if i is equal to 0
+			set max to a[i]
+		else
+			if a[i] is greater than max, change max to a[i]
+		}
+	}
+	create integer f = (2 * sum / n) + 1
+	if f is greater than max
+		print f
+	else
+		print max
+	}
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	create int n
+	set mx to 0
+	assign 0 to sum
+	read n
+	create int a
+	for i=1 to n inclusive
+		read a
+		set mx to max of mx and a
+		assign sum + a to sum
+	}
+	set sum to sum*2
+	set sum = sum+n
+	sum = sum / n
+	print max of sum and mx
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	declare int variables n, i and j and int array a with 100002 elements
+	read n
+	declare int sum = 0
+	declare integer variable mx = - 1
+	for i from 0 to n exclusive
+		read a[i]
+		increase sum by a[i]
+		assign max of mx and a[i] to mx
+	}
+	looping infinitely
+		if mx * n - sum is greater than sum
+			print mx
+			return 0;
+		else
+			increment mx
+		}
+	}
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+create integer n
+int main() {
+	read n
+	create integers sum, temp, Max with sum = 0, Max = 0
+	for i = 0 to n exclusive
+		read temp
+		if temp is greater than Max, set Max to temp
+		increment sum by temp
+	}
+	print maximum of ( Max and sum * 2 / n + 1 ) print newline
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	create int n
+	read input to n
+	create integers ans, mayor and a with ans and mayor = 0
+	for integer i = 0 to n exclusive
+		read a
+		set ans to ans + a
+		set mayor to max of mayor and a
+	}
+	change ans to max of (ans * 2) / n + 1 and mayor
+	print ans
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	declare long long variable n
+	read n
+	let a be long long array with size n
+	declare long long variable maxi = 0
+	declare long long sum = 0
+	for i = 0 and _n = n while i < _n, incrementing i
+		read input to a[i]
+		assign max of maxi and a[i] to maxi
+		set sum to sum + a[i]
+	}
+	declare long long variable k = 0
+	increment k while n * k <= 2 * sum
+	if k is less than maxi, set k to maxi
+	print k
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	let n, sum, sum1 and ans be integers with sum and sum1 = 0
+	read n
+	let ar be an array of integers of size n
+	for integer i = 0 to n exclusive
+		read ar[i]
+		increase sum by ar[i]
+	}
+	sort ar
+	for i = ar[n - 1], incrementing i
+		assign value of 0 to sum1
+		for j = 0 to n exclusive, increase sum1 by i - ar[j]
+		if sum1 is greater than sum
+			set value of ans to i
+			stop the loop
+		}
+	}
+	print ans
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	declare int variable n
+	read n
+	declare int array a with size n
+	create integer sum = 0
+	for integer i = 0 to n exclusive
+		read input to a[i]
+		add a[i] to sum
+	}
+	create int k = (2 * sum) / n + 1
+	sort a
+	if k >= a[n - 1]
+		print k
+	else
+		print a[n - 1]
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	n = integer
+	read n
+	arr = integer vector of size n
+	max = maximum integer value, sum = integer = 0
+	for i = 0 to n exclusive
+		read arr[i]
+		sum = sum + arr[i]
+		if max < arr[i], then max = arr[i]
+	}
+	if n * max > 2 * sum
+		print max
+	else
+		if (2 * sum) modulo n is 0
+			print the result of (2 * n) / n + 1
+		else
+			print the result of (2 * sum) / n rounded up to the next whole number
+	}
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	n = integer
+	read n
+	pointer location of d = integer array of size n
+	k = integer = 0, s = integer = 0
+	for i = 0 to n exclusive
+		read d[i]
+		s = s + d[i]
+		k = the highest value betweek k and d[i]
+	}
+	sum = integer = 0
+	do
+		sum = 0
+		for i = 0 to n exclusive
+		increase k by 1
+	while sum <= s
+	print the result of k - 1
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	create integers n, s, k with s = 0, k = 0
+	read n
+	for i = 1 to n inclusive
+		create integer a
+		read a
+		set k to maximum of k and a
+		increment s by a
+	}
+	for n * k is less than or equal to 2 * s, incrementing k
+		end statement
+	print k print '\n'
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	n, sum, ans = int with sum = 0 and ans = 0
+	read n
+	arr = int array of size n
+	for i = 0 to n
+		read arr[i]
+		increment sum by arr[i]
+	}
+	sort arr
+	for i = 0 to n - 1 increment ans by -arr[i] + arr[n - 1]
+	loop infinitely
+		if ans is greater than sum then break
+		increment ans by n
+		increment arr[n - 1]
+	}
+	print arr[n - 1]
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	create integer n
+	read n
+	create integer vector arr initialized with ( n + 5 )
+	create integer max_val with max_val = 0
+	create long long sum with sum = 0
+	for i = 0 to n exclusive
+		read arr[i]
+		set max_val to maximum of ( max_val and arr[i] )
+		increment sum by arr[i]
+	}
+	create integer i with i = max_val
+	for i is less than 10000, incrementing i
+		create long long val with val = i * n - sum
+		if val is greater than sum, break loop
+	}
+	print i print newline
+	return 0;
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	define integers n, i, sum, max1, ans, sum1, i1, and j, setting sum and max1 to 0
+	read into n
+	define integer array a to be of n + 2 elements
+	for i from 0 to n (exclusive) by 1
+		read into a[i]
+		increment sum by a[i]
+		set max1 to max. of max1, a[i]
+	}
+	for j from max1 to max1 * 2 + 2 by 1
+		zero sum1
+		for i1 from 0 to n (exclusive) by 1, increment sum1 by j - a[i1]
+		if sum1 > sum
+			assign j to ans
+			break out
+		}
+	}
+	print ans and newline
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	n, i, j, k1, k, suma, sumb = int with k = 0 and suma = 0 and sumb = 0
+	read n
+	a = int array of size n
+	for i = 0 to n
+		read a[i]
+		if a[i] is greater than k then set k to a[i]
+		increment suma by a[i]
+	}
+	for i = 0 to n increment sumb by k - a[i]
+	for i = 0
+		if sumb is less or equal to suma
+			set sumb to 0
+			increment k
+			for j = 0 to n increment sumb by k - a[j]
+		else
+			break
+		}
+	}
+	print k
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+declare an array of integers value with size 101
+int main() {
+	declare integers n, k and sum where sum = 0 and k = -1
+	read input to n
+	for integer i = 0 to n exclusive
+		read value[i]
+		add value[i] to sum
+		if value[i] is greater than k, set k to value[i]
+	}
+	while k * n - sum <= sum, increment k
+	print k
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	create integer n
+	read n
+	create integer array a with size n, create integer sum with sum = 0
+	for i = 0 to n exclusive
+		create integer k
+		read k
+		set a[i] to k
+		set sum to sum + a[i]
+	}
+	create integer lar with lar = a[0]
+	for i = 1 to n exclusive
+		if lar is less than a[i], set lar to a[i]
+	}
+	for j = lar, incrementing j
+		if j * n is greater than ( 2 * sum )
+			print j print newline
+			break loop
+		}
+	}
+}
+```
+
+
+probid: 1043A
+pseudo program:
+```
+int main() {
+	create integer n, create integer array a with size 200
+	read n
+	create integers sum1, k, with sum1 = 0, k = 0
+	for i = 0 to n exclusive
+		read a[i]
+		increment sum1 by a[i]
+		set k to maximum of k and a[i]
+	}
+	create integer flag with flag = 0
+	while not flag
+		create integer sum2 with sum2 = 0
+		for i = 0 to n exclusive, increment sum2 by k - a[i]
+		if sum2 is greater than sum1
+			set flag to 1
+		else
+			increment k
+		}
+	}
+	print k print newline
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+declare long long const mod = 1e9 + 7
+power is a long long function with long long arguments x, y and mod
+	declare long long variable ans = 1
+	x = x modulo mod
+	while y
+		if y & 1 != 0, assign (x * ans) % mod to ans
+		set x to (x * x) % mod
+		y = y >> 1
+	}
+	return ans
+}
+gcd is a long long function with long long arguments a and b
+	if a = 0, return b
+	return gcd(b % a, a)
+}
+int main() {
+	declare long long variables n, id1 and id2
+	read n, id1 and id2
+	create string second
+	read input to second
+	if second[id1 - 1] is equal to second[id2 - 1]
+		print 0
+	else
+		print 1
+	}
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	create integers n, a, b
+	create string s
+	create integer ans
+	read n read a read b read s
+	if s[a-1] is s[b-1]
+		set ans to 0
+	else
+		set ans to 1
+	}
+	print ans print '\n'
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+create const int inf = 0x3f3f3f3f
+int main() {
+	let ints n, a, and b
+	read n, a, and b
+	create string s
+	read s
+	if s[a - 1] is equal to s[b - 1]
+		print 0
+		return 0;
+	}
+	create int set st
+	let char ch = ' '
+	create int pos = 0
+	for i = 0 to size of s exclusive
+		if ch is equal to ' '
+			set ch to s[i]
+			continue to next loop iteration
+		}
+		if s[i] is equal to ch
+			set pos to i
+		else
+			insert i - pos into set st
+			set pos to i
+			set char to s[i]
+		}
+	}
+	print *st.end()
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+declare an array of booleans vis with size 200005
+declare int arrays cnt and freq with 200005 elements
+int main() {
+	declare integers n, a and b
+	read input to n, a and b
+	declare string s
+	read s
+	if s[a - 1] = s[b - 1]
+		print "0"
+	else
+		print "1"
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+declare integers n, a and b
+create string s
+int main() {
+	read n, a, b and s
+	decrement a
+	decrement b
+	if s[a] != s[b]
+		print 1
+	else
+		print 0
+	}
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	create integers n, a and b
+	read n, a and b
+	declare an array of chars arr with size n + 2
+	read n elements into arr
+	if arr[a - 1] = arr[b - 1]
+		print 0
+	else
+		print 1
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+create string s
+int main() {
+	create int n, a and b
+	read n, a, b and s
+	if a equal to b or s[a - 1] = s[b - 1]
+		print 0
+	else
+		print 1 and a newline
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	n, a, b = integers
+	s = string
+	read n, a, b
+	decrement a, decrement b
+	read s
+	if s[a] is s[b]
+		print 0
+		return 0;
+	else
+		print 1
+		return 0;
+	}
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+declare ints n, ans, a and b; create arrays of ints be and af with 100001 elements
+declare string s with value
+int main() {
+	read variables n, a, b and s from the input
+	if s[a - 1] is equal to s[b - 1]
+		print 0
+	else
+		print 1
+	}
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	declare integers n, a and b
+	read input to n, a and b
+	declare character array aN with size 100000
+	read aN
+	if aN[a - 1] != aN[b - 1]
+		print 1
+	else
+		print 0
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+create integer array num with size 1000000 with num = {0}
+declare fx with character array a as argument, returning void
+int main() {
+	create integers n, a, b
+	create character array z with size 1000000
+	read n read a read b
+	read z
+	if z[a-1] is z[b-1]
+		print "0" print newline
+	else
+		print "1" print newline
+	}
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	create integers n, a and b
+	create string s
+	declare int variable ans
+	read n, a, b and s
+	if s[a - 1] = s[b - 1]
+		set ans to 0
+	else
+		set ans to 1
+	}
+	print ans and '\n'
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+declare const int maxn = 1e6 + 6
+create ints n, a and b
+declare an array of integers arr with size maxn
+declare int variable len = 0
+declare string variable str
+int main() {
+	read input to n, a and b
+	read input to str
+	loop i from 1 to n inclusive, assign str[i - 1] to arr[i]
+	if arr[a] is equal to arr[b]
+		print "0"
+	else
+		print "1"
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+define vector VI, VI2, VI3, VI4
+define n, m, f, t, a, b as integers
+define s as string
+int main() {
+	read n, a, b, s
+	print abs(s[--a] - s[--b])
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+create integers n, a, b
+create string s
+int main() {
+	read n read a read b read s
+	if s[a-1] is s[b-1]
+		print 0 print "\n"
+	else
+		print 1 print "\n"
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	s = string
+	n, m, k = int
+	read n then m then k
+	read s
+	prepend '#' to s
+	print 1 if s[m] is not s[k] else print 0
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+define integral constant maxn to be 1e6 + 6
+define integers n, a, b
+define maxn-element int array arr
+define int len, set to zero
+define string str
+int main() {
+	read n, a, and then b
+	read str
+	for int i from i to n by 1, assign str[i - 1] to arr[i]
+	if arr[a] is arr[b]
+		print "0" and newline
+	otherwise
+		print "1" and a newline
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+create string s
+int main() {
+	create integers n, a, b
+	read n read a read b read s
+	if a is b or s[a-1] is s[b-1]
+		print "0" print newline
+	else
+		pirnt "1" print newline
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	create integers a, b, n
+	create string s
+	read n read a read b read s
+	decrement a
+	decrement b
+	print ((s[a] - '0') ^ (s[b] - '0')) print newline
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+create constant long long int mod = 998244353
+create const long long int inf = 2e18
+let const int maxn = 200005
+let const int maxa = 300005
+declare gcd taking in long long ints a and b and returning long long
+	return gcd(b, a % b) if b is truthy or a if not
+}
+declare powmod taking in long long ints a and b and returning long long
+	let long long in res = 1
+	set a to a % mod
+	if b is less than 0, return -1
+	loop until b is falsy
+		if b & 1 is truthy, set res to res * a % mod
+		set a to a * a % mod
+	}
+	return res
+}
+let int INF = 10000000
+int main() {
+	let int T
+	create ints n, m, l, r
+	create int ans = 0
+	create string str
+	read n, l, and r
+	create str
+	let int array a of size maxn
+	for i = 0 to n exclusive, set a[i + 1] to str[i] - '0'
+	if a[l] is equal to a[r], return the result of 0 * puts("0")
+	print "1"
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	let n, a, b be integers
+	let str be a string
+	read n, a and b
+	read str
+	print the absolute value of str[a-]-'0' - str[b-1]+'0'
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	locale loc
+	declare int variables n, s and e
+	read input to n, s and e
+	declare string variable str
+	read str
+	if str[s - 1] = str[e - 1]
+		print 0 and "\n"
+	else
+		print 1 and "\n"
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	declare ints n, a and b
+	read n, a and b
+	declare integer variables i and val
+	declare vector of integers called v with size n + 1
+	declare string variable s
+	read input to s
+	for i from 0 to n exclusive
+		if s[i] is equal to '1'
+			set v[i + 1] to 1
+		else
+			assign 0 to v[i + 1]
+	}
+	declare int variable aa = min of a and b
+	declare int variable bb = max of a and b
+	declare int j
+	create int count = 0
+	loop i from aa while i <= bb
+		if v[i] = 0
+			declare integer variable index = i
+			for j = i to bb inclusive
+				if v[j] = 0, set index to j
+			}
+			if index = bb, break the loop
+			if index != bb
+				change i to index + 1
+				increment count by one
+			}
+		else
+			create integer index = i
+			for j from i to bb inclusive
+				if v[j] is equal to 1, assign j to index
+			}
+			if index is equal to bb, break
+			if index != bb
+				set i to index + 1
+				increment count by one
+			}
+		}
+	}
+	print count
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	declare ints n, a and b
+	read input to n, a and b
+	declare string s
+	read input to s
+	if s[a - 1] is equal to s[b - 1]
+		print 0
+		;
+	else
+		print 1
+	;
+	return 0;
+}
+```
+
+
+probid: 743A
+pseudo program:
+```
+int main() {
+	let n, a, b be integers
+	let s be a string
+	read n, a, b
+	read s
+	if s[a - 1] is equal to s[b - 1]
+		print 0 and newline
+		return 0;
+	else do the following
+		print 1 and newline
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	let a be a string
+	let n be a integer
+	read a
+	read n
+	the 26th element of integer array kiek is equal to 0
+	if length of a is less than n
+		print impossible and newline
+		return 0;
+	}
+	for i = 0 to length of a exclusive , increment kiek[a[i] - a] by 1
+	let k be a integer with k = 0
+	for i = 0 to 26 exclusive
+		if kiek[i] >= 1 , increment k by 1
+	}
+	if k is less than n
+		print n - k and newline
+	else do the following
+		print 0 and newline
+	semicolumn
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	declare new string s
+	read input to s
+	k is a new integer
+	read input to k
+	create new integer called cnt with value 0
+	if k is greater than length of s
+		print "impossible"
+	else
+		create new integer exrt
+		create new array of integers freq with size 30 filled with 0
+		for i from 0 to length of s exclusive incrementing i
+			assign the new value = (s[i]) - 96 to exrt
+			increment freq[exrt] by one
+		}
+		in a for loop, change i from 0 to 30 exclusive
+			increment cnt if freq[i] != 0
+		}
+		if k <= cnt
+			print "0" to the standard output
+		else
+			print k - cnt
+	}
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+create constant long long integer INF = (1LL << 60) - 1
+new const long long integer MAX = 998244353
+fast_exp is a long long int function with long long int arguments base, exp and m
+	declare long long integer variable res = 1
+	while exp > 0
+		if exp is odd, assign (res * base) % m to res
+		change the value of base to base squared % m
+		divide exp by 2
+	}
+	return res modulo m
+}
+int main() {
+	s is a new string
+	declare integers k and cnt with cnt = 0
+	read variables s and k from the input
+	freq is a new array of integers with 26 elements filled with 0
+	declare integer n with value length of s
+	start for loop from i = 0 to n exclusive, incrementing freq[s[i] - 'a']
+	in a for loop, change i from 0 to 26 exclusive incrementing i
+		if freq[i] is not 0, increment cnt by one
+	}
+	if cnt >= k
+		print 0
+		return 0;
+	}
+	if n is less than k
+		print "impossible"
+		return 0;
+	}
+	print k - cnt
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	declare string s
+	read s
+	declare integer n
+	read n
+	if n is greater than integer casted size of s
+		print "impossible\n"
+	else
+		print maximum of ( o and n - size of integer casted character set initialized with ( beginning of s to end of s )), '\n'
+	}
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+create string a
+create int s, num, p[1001]
+int main() {
+	read a and s
+	if size of a < s
+		print impossible
+		return 0;
+	}
+	for i=0 to size of s exclusive
+		if p[a[i]]=0, increment ans
+		set p[a[i]] = 1
+	}
+	print max of 0 and s-m
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	str = string
+	read str
+	k = long long integer
+	read k
+	freq = long long integer array of size 27, freq[0] = 0
+	if k > size of str
+		print impossible
+	else
+		for i = 0 to size of str exclusive, then increase by 1 freq[str[i] - a + 1]
+		count = long long integer = 0
+		for i = 1 to 26 inclusive
+			if freq[i] is not 0, then increase count by 1
+		}
+		if count >= k
+			print 0
+		else
+			print k - count
+		}
+	}
+	print endline
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+declare constant integer maxn = 3e5 + 5
+declare integer array a size 50 = {}
+int main() {
+	declare string s
+	declare integer k
+	read s and k
+	for i = 0 to length of s exclusive, increment a[s[i]-'a']
+	declare integers sum = 0, cnt = 0
+	for i = 0 to 30 exclusive
+		if a[i] is greater than 0, increment cnt
+		increment sum by a[i]
+	}
+	if sum is less than k, return print "impossible", 0
+	if cnt is greater than or equal to k, return print "0", 0
+	print k - cnt and newline
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+declare constant integer inf = 0x3f3f3f3f
+declare constant integer mod = integer casted 1e9 + 7
+declare constant integer maxn = integer casted 1e5 + 5
+declare integer array vis size 30
+int main() {
+	declare string s
+	read s
+	declare integer len = size of s
+	declare integer n
+	read n
+	if n is greater than len, return 0 * print "impossible"
+	for i = 0 to len exclusive, increment vis[s[i] - 'a']
+	declare integer cnt = 0
+	for i = 0 to 26 exclusive
+		if vis[i], increment cnt
+	}
+	if cnt is greater than or equal to n
+		print "0"
+	else
+		print n - cnt and newline
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	s=string
+	k=int, cnt=array of 26 int filled with 0
+	read s,k
+	if length of s < k
+		print "impossibile"
+			print newline
+	else
+		for i=0 to length of s exclusive increment cnt[s[i]-97]
+		res=0
+		for i=0 to 26 exclusive
+			if cnt[i] increment res
+		}
+		print max(0, k-res)
+	}
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	declare integer k
+	declare string s
+	read s and k
+	if size of s is less than k, return print "impossible\n", 0
+	sort from beginning of s to end of s
+	resize s to size ( remove all duplicates but one from ( beginning of s to end of s ) - beginning of s )
+	print maximum of ( k - integer casted size of s and 0 ) and newline
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+declare integers n, num, ans
+declare string str
+int main() {
+	read str
+	read n
+	if size of str is less than n
+		print "impossible\n"
+		return 0;
+	}
+	for i = 0 to 26 exclusive
+		if first index of 'a' + i in str is not -1, increment num
+	}
+	print maximum of ( n - num and 0 ) and "\n"
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+create constant integer N with value 2e6 + 5
+long long function power with long long arguments x and p and unsigned long long argument y
+	create new long long variable res with value 1
+	assign x modulo p to x
+	while y > 0
+		if y & 1 is not 0, change res to (res * x) % p
+		assign the new value = y to y
+		change x to (x * x) % p
+	}
+	return res
+}
+declare new long long variables i and j
+int main() {
+	declare string variable with name s
+	create new long long k
+	read s and k from the input
+	if k is greater than length of s
+		print "impossible" and '\n' to the standard output
+		return 0;
+	else
+		temp is a set of unique characters
+		for i = 0 to length of s exclusive
+			insert s[i] into temp
+			if length of temp = k
+				print 0 and '\n'
+				return 0;
+			}
+		}
+		print k - length of temp and '\n'
+		return 0;
+	}
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	declare string s
+	declare integer k
+	read s and k
+	if k is greater than size of s
+		print "impossible\n"
+		return 0;
+	}
+	sort from beginning of s to end of s
+	remove from ( remove all but first of ( beginning of s to end of s ) ) to end of s from s
+	print maximum of ( k - integer casted size of s and 0 ) and newline
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+let N, K, ans , val, x, y be integers with ans = 2e9 , A = array of integers of length 26
+let T, S be strings
+int main() {
+	read S, N
+	if length of S is less than N
+		print impossible and newline
+		return 0;
+	}
+	for integer i = 0 to length of S exclusive
+		increment A[S[i] - a] by 1
+		if A[S[i] - a is equal to 1 , increment val by 1
+	}
+	print maximum of 0, N - val and newline
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+create new int k and an array of ints haSh with 30 elements
+declare string variable s
+int main() {
+	read standard input to s and k
+	if k is greater than length of s
+		print "impossible"
+		return 0;
+	}
+	start for loop from i = 0 to length of s exclusive
+		if haSh[(s[i] - 'a')] is false
+			change haSh[s[i] - 'a'] to 1
+			decrement k by one
+		}
+	}
+	if k <= 0
+		print 0
+		return 0;
+	else
+		print k
+	}
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	declare string variable with name s
+	k is a new integer
+	read standard input to s and k
+	ms is a set of unique characters
+	insert all elements of s into ms
+	if length of s is less than k
+		print "impossible"
+	else
+		if length of ms is less than k
+			print k - length of ms
+		else
+			print 0 to the standard output
+	}
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+create new constant integer INF = 0x3f3f3f3f
+declare integer constant mod with value 998244353
+create new string s
+declare integers k and cnt and an integer array vis with 26 elements
+int main() {
+	read s and k from the input
+	if length of s is less than k
+		return puts("impossible"), 0
+	else
+		in a for loop, change i from 0 to length of s exclusive
+			if vis[s[i] - 'a'] is equal to 0
+				set the value of vis[s[i] - 'a'] to 1
+				increment cnt
+			}
+		}
+		if cnt >= k
+			print 0
+		else
+			print k - cnt
+	}
+	return 0;
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+int main() {
+	create new strings input and insertion
+	create new integers unique and inputLength with inputLength = 0
+	read input and unique from the input
+	assign the new value = length of input to inputLength
+	if inputLength is less than unique
+		print "impossible"
+	else
+		create new set of unique strings called inputs
+		start for loop from i = 0 to inputLength exclusive
+			change the value of insertion to input[i]
+			insert insertion to the inputs
+		}
+		if unique is greater than length of inputs
+			print unique - length of inputs
+		else
+			print 0
+	}
+}
+```
+
+
+probid: 844A
+pseudo program:
+```
+maxn = constant integer = 3e5 + 5
+a = integer array of size 50
+int main() {
+	s = string
+	k = integer
+	read s, k
+	for i = 0 to length of s, then increase a[s[i] - a] by 1
+	sum = integer = 0, cnt = integer = 0
+	for i = 0 to 30 exclusive
+		if a[i] > 0, then increase cnt by 1
+		sum = sum + a[i]
+	}
+	if sum < k, then print impossible then end execution of code
+	if cnt >= k print 0 then end execution of code
+	print k - cnt
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	let n, pre, cur, nex, sum be integers, let sum = 0
+	read n
+	if n equals 1 or 2, return and print 0
+	read pre, cur
+	subract 2 from n
+	while n > 0
+		read nex
+		if cur > pre && cur > nex or cur < pre && cur < nex, add one to sum
+		let pre = cur
+		let cur = nex
+	}
+	print sum
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	declare integer variable n
+	read n
+	create vector of integers a with size n
+	read n elements from the user input and out them into a
+	ans is a new integer with value 0
+	start a loop from i = 1 to n - 1 exclusive
+		if (a[i] - a[i - 1]) * (a[i] - a[i + 1]) is greater than 0, increment ans
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	declare integers n, c = 0
+	declare integer vector v
+	read n
+	for i = 0 to n exclusive
+		declare integer a
+		read a
+		add a to end of v
+	}
+	for i = 1 to n - 1 exclusive
+		if v[i] is greater than v[i+1] and v[i] is greater than v[i-1]
+			increment c
+		else if v[i] is less than v[1+i] and v[i] is less than v[i-1]
+			increment c
+		}
+	}
+	print c and newline
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+create int a[1005]
+int main() {
+	create int n, set ans to 0
+	read n
+	for i=0 to n exclusive, read a[i]
+	for i=1 to n-1 exclusive
+		if a[i] > a[i - 1] and a[i] > a[i + 1], increment ans
+		if a[i] < a[i - 1] and a[i] < a[i + 1], increment ans
+	}
+	print ans
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+create int n, a[1001]
+int main() {
+	read n
+	for i=1 to n inclusive, read a[i]
+	ans=0
+	for i=2 to n exclusive
+		if a[i] > a[i + 1] and a[i] > a[i - 1]
+			increment ans
+			continue
+		}
+		if a[i] < a[i + 1] and a[i] < a[i - 1], increment ans
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+maxsum, minsum, a, n = integers with a = array of size 1005
+int main() {
+	read n
+	for i = 1 to n, read a[i]
+	foe i = 2 to n exclusive
+		if (a[i] > a[i - 1] and a[i] > a[i + 1]), increment maxsum
+		if (a[i] < a[i - 1] and a[i] < a[i + 1]), increment minsum
+	}
+	print maxsum + minsum
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	declare long long integer n
+	read n
+	declare long long integer array a size n + 1 = {0}
+	for i = 1 to n inclusive, read a[i]
+	declare long long integers c = 0, d = 0
+	for i = 2 to n exclusive
+		if a[i] is greater than a[i-1] and a[i] is greater than a[i+1] or a[i] is less than a[i-1] and a[i] is less than a[i+1], increment c
+	}
+	print c and newline
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+g = 9.8
+set mod = 1000000007
+create int n, i, j, k, ans
+set x = 1e5
+create long long a[x]
+int main() {
+	create int i, j, k, m, n, t
+	read t
+	for i=0 to t exclusive, read a[i]
+	num=0
+	for i=1 to t-1 exclusive
+		if a[i] > a[i - 1] and a[i] > a[i + 1], increment num
+		if a[i] < a[i - 1] and a[i] < a[i + 1], add 1 to num
+	}
+	print num
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+make constant integer maxn = 1e5 + 5
+make const double esp = 1e-8
+declare inline read returning integer
+	make int X = 0 and w = 0
+	let char ch = 0
+	while ch is not a digit
+		set w to w | ch == '-'
+		read ch
+	}
+	while ch is a digit, set X to X << 3) + (X << 1) + (ch ^ 48) and ch to getchar()
+	return -X if w is truthy or X if not
+}
+make long long int array a of size maxn
+int main() {
+	make integer n
+	read n
+	for i = 1 to n, read a[i]
+	create integer num = 0
+	for i = 1 to n - 1
+		if a[i] is greater than a[i + 1] and a[i] is greater than a[i - 1] or a[i] is less than a[i - 1] or a[i] is less than a[i - 1] and a[i] is less than a[i + 1], increment num
+	}
+	output num
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+create ints n, l, mid, r, and now
+int main() {
+	read n
+	make integer ans = 0
+	read l
+	if n is greater than or equal to 1
+		end statement
+	if n is greater than or equal to 2, read mid
+	if n is greater than or equal to 3
+		set n to n - 2
+		while n-- is truthy
+			read r
+			if mid is less than 1 and mid is less than r
+				set ans to ans + 1
+			else if mid is greater than 1 and mid is greater than r
+				set ans to ans + 1
+			set l to mid
+			set mid to r
+		}
+	}
+	output ans
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	create int a[1002], n, i, set ans to 0
+	read n
+	for i=1 to n inclusive, read a[i]
+	for i=2 to n exclusive
+		if a[i] > a[i + 1] and a[i] > a[i - 1]
+			increment ans
+		else if a[i] < a[i + 1] and a[i] < a[i - 1]
+			increment ans
+		}
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+a = long long array length 1001
+int main() {
+	let n, ans = 0 be long long
+	read n
+	read the first n elements of a
+	for long long i = 1 to n-1 exclusive
+		if a[i] > a[i-1] and a[i] > a[i+1] then increment ans
+		if a[i] < a[i-1] and a[i] < a[i+1] then increment ans
+	}
+	print ans
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	let n and ans be integers, set ans to 0
+	read in n
+	let a be an array of integers of size n
+	read in n values into a
+	for i = 1 to n -1
+		if a[i] > a[i - 1] and a[i] > a[i + 1] or a[i] < a[i - 1] and a[i] < a[i + 1], increment a
+	print ans and a newline
+	read in n
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	create int n, set c to 0
+	read n
+	create int a[n + 2]
+	for i=0 to n exclusive, read a[i]
+	for i=1 to n-1 exclusive
+		if a[i] < a[i - 1] and a[i] < a[i + 1]
+			increment c
+		else if a[i] > a[i - 1] and a[i] > a[i + 1]
+			increment c
+		}
+	}
+	print c
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+let gcd be a function which accepts long integers a and b and returns a long integer
+	return a if (not b) else return gcd of b and a modulo b
+}
+let lcm be a function which accepts long integers a and b and returns a long integer
+	return the value of (a / gcd of a and b) * b
+}
+let dix be an integer array with elements as 1, -1, 0, 0, 1, 1, -1, -1
+let diy be an integer array with elements as 0, 0, 1, -1, 1, -1, 1, -1
+int main() {
+	let n be a integer
+	read n
+	create a vector of integers v and size n
+	the integer value of res = 0
+	for i = 0 to n exclusive , read v[i]
+	for i = 1 to n - 1 exclusive
+		if v[i] is greater than v[i - 1] and v[i] is greater than v[i + 1] , increment res by 1
+	for i = 1 to n - 1 exclusive
+		if v[i] is less than v[i - 1] and v[i] is less than v[i + 1] , increment res by 1
+	print res and newline
+	return 0;
+	semicolumn
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	n = integer
+	while read n
+		a = integer array of size 1005
+		for i = 0 to n exclusive, read a[i]
+		num = integer with num = 0
+		for i = 1 to n - 1 exclusive
+			if (a[i] > a[i - 1] and a[i] > a[i + 1]), increment num
+			if (a[i] < a[i - 1] and a[i] < a[i + 1]), increment num
+		}
+		print num
+	}
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	n = int
+	read n
+	arr = int array length n
+	read the first n elements of arr
+	sol = 0 = int
+	for i = 1 to n - 1exclusive
+		if ((arr[i] - arr[i - 1]) * (arr[i] - arr[i + 1])) is stricly positive then increment sol
+	}
+	print sol
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	r =integer
+	while reading values r
+		sum = integer with 0
+		a = array of 1001 integers with 0 elements
+		Read r values into array a
+		for i = 1 to r - 1 exclusive
+			if a[i] is less than a[i - 1]
+				if a[i] is less than a[i + 1]
+					increment sum
+				else do the following
+					do nothing
+			else if a[i] is greater than a[i - 1]
+				if a[i] is less than a[i + 1], then increment sum
+		}
+		print sum and new line
+	}
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	let n, i, extrema = 0, arr[1000 + 5] be ints
+	read n
+	for i = 0 to n exclusive increment i first, read arr[i]
+	for i = 1 to n-1 increment i first
+		if arr[i] > arr[i-1] and arr[i] > arr[i+1]
+			increment first extrema
+		else if arr[i] < arr[i - 1] and arr[i] < arr[i + 1]
+			increment first extrema
+	}
+	print extrema
+	return 0
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	let n be a integer
+	read n
+	let *elements be a integer with *elements = new int[n]
+	for i = 0 to n exclusive , read elements[i]
+	the integer value of count = 0
+	for i = 1 to n - 1 exclusive
+		the integer value of prev = elements[i - 1]
+		the integer value of cur = elements[i]
+		the integer value of next = elements[i + 1]
+		if (cur is less than prev and cur is less than next) or (cur is greater than prev and cur is greater than next) , increment count by 1
+	}
+	print count and newline
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	declare new ints n and k and an int array a with size 1005
+	read n and loop further
+		change k to 0
+		read n elements into a in a loop
+		for i from 1 to n - 1 exclusive incrementing i
+			increment k if a[i] > a[i - 1] and a[i] > a[i + 1] or a[i] < a[i - 1] and a[i] < a[i + 1]
+		print k to the standard output
+	}
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	n, a = ints with a an int array of length 1020
+	i = int
+	read n
+	read the first n elements of a
+	cnt = 0 = int
+	for i = 1 to n - 1 exclusive
+		if a at i > a at i - 1 and a at i > a at i + 1 then increment cnt
+		if a[i] < a[i - 1] and a[i + 1] > a[i] then increment cnt
+	}
+	print cnt
+	return 0;
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+make ints n and c = 0
+make integer vector a of size 1000
+int main() {
+	read n
+	for i = 0 to n exclusive, read a[i]
+	for i = 1 to n - 2
+		if a[i - 1] is greater than a[i] and a[i + 1] is greater than a[i], add 1 to c
+		if a[i - 1] is less than a[i] and a[i + 1] is less than a[i], increment c
+	}
+	show c
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+int main() {
+	create integer n
+	read n
+	v = array of integers of size n
+	read n integers into array v
+	create integer ans = 0
+	for q=1 to n-1 exclusive
+		if v[q] > v[q-1] and v[q] > v[q+1] then
+			increment ans
+		else if v[q] < v[q-1] and v[q] < v[q+1] then
+			increment ans
+		}
+	}
+	print ans and newline
+}
+```
+
+
+probid: 888A
+pseudo program:
+```
+declare constant integer maxn = 1e4 + 10
+a is a new array of integers with size maxn
+create integer variable n
+declare new integer cnt = 0
+int main() {
+	read variable n from the input
+	start a loop from i = 1 to n inclusive, and read a[i] from the input on each loop
+	in a for loop, change i from 2 to n - 1 inclusive incrementing i
+		if a[i] > a[i - 1] and a[i] > a[i + 1] or a[i] < a[i - 1] and a[i] < a[i + 1], increment cnt
+	}
+	print cnt
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	create string s
+	read s
+	create character stack st
+	for i = 0 to size of s exclusive
+		if st is empty
+			add element s[i] to top of st
+		else if top of st is s[i]
+			remove element from top of st
+		else
+			add element s[i] to top of st
+	}
+	create string tmp with tmp = ""
+	while st is not empty
+		increment tmp by top of st
+		remove element from top of st
+	}
+	reverse element order between beginning of tmp and end of tmp
+	print tmp print "\n"
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+create character stack chars
+int main() {
+	create string str
+	read str
+	create character ch
+	for i = 0 to str[i] is not '\0', iincrementing i
+		set ch to str[i]
+		if chars is not empty
+			if top of chars is ch
+				remove element from top of chars
+			else
+				add element ch to top of chars
+		else
+			add element ch to top of chars
+	}
+	create character vector result
+	while chars is not empty
+		add element top of chars to end of result
+		remove element from top of chars
+	}
+	for i = size of result - 1 to 0 inclusive, decrementing i, print result[i]
+	print "\n"
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+OO = const long long with OO = 1e8
+o_o = const integer with o_o = 0
+EPS = double with EPS = double epsilon numeric_limits
+MAX = integer const with MAX = 2 * 100000 + 9
+ar = character array of size MAX
+co = integer with co = -1
+in the function inzlition
+	for i = 0 to MAX exclusive, ar[i] = 0
+}
+int main() {
+	text = string
+	read text
+	call inzlition
+	co = -1
+	for i = 0 to text.size() exclusive
+		if co is -1
+			increment co
+			ar[co] = text[i]
+		else if text[i] is ar[co]
+			ar[co] = 0
+			decrement co
+		else
+			increment co
+			ar[co] = text[i]
+		}
+	}
+	for j = 0 to co, print ar[j]
+	print next line
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	declare string s
+	create vector of characters a
+	read input to s
+	declare long int n = length of s
+	loop i from 0 to n exclusive
+		if a is empty
+			push s[i] into a
+		else if last element of a is not s[i]
+			push s[i] into a
+		else
+			remove last element from a
+		}
+	}
+	for i = 0 to length of a exclusive print a[i]
+	print a new line
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+create string s
+int main() {
+	read s
+	create integer i with i = size of s - 1
+	while i is greater than 0
+		if s[i] is s[i-1], erase from i - 1 to length 2 from s
+		decrement i
+	}
+	print s print "\n"
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	x = integer with x = 0
+	s2 = string
+	read s2
+	for i = s2.length() - 2 down to 0
+		if s2[i] is s2[i + 1], erase(i, 2) from s2
+	}
+	print s2
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	Let s be a string
+	Read s
+	Create integer l and set it to length of s
+	for i = 1 to l exclusive
+		if s[i] equals s[i - 1]
+			erase characters i-1 and i from s
+			set i = i - 2
+		}
+	}
+	Print s
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	str = string
+	read str
+	size = int with size = size of str
+	s = char stack
+	push str[0] to s
+	for i = 1 to size if s is not empty and str[i] is top of s then pop s else push str[i] to s
+	ans = string with ans = ""
+	loop while s is not empty
+		append top of s to ans
+		pop s
+	}
+	reverse ans
+	print ans
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+create constant integer maxn with maxn = 2 * 1e5 + 10
+create character stack s
+create string array maxn
+int main() {
+	while s is not empty, remove element from top of s
+	create integer len
+	read string into str + 1
+	set len to string length of str + 1
+	for i = len to 1 inclusive, decrementing i
+		if not size of s
+			add element str[i] to top of s
+		else
+			if top of s is str[i]
+				remove element from top of s
+			else
+				add str[i] to top of s
+			}
+		}
+	}
+	while s is not empty
+		print top of s
+		remove element from top of s
+	}
+	print newline
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	create characters stack s
+	declare string f
+	read input to f
+	for i from 0 to length of f exclusive
+		if s is empty
+			push f[i] to s
+		else
+			if f[i] = top element of s
+				remove top element of s
+			else
+				push f[i] to s
+		}
+	}
+	declare string variable t = ""
+	while s is not empty
+		add top element of s to t
+		remove top element of s
+	}
+	loop i from length of t - 1 to 0 inclusive counting down, print t[i]
+	print
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	create string s
+	read s
+	create character stack c
+	for i = 0 to size of s exclusive
+		if c is not empty and top of c is s[i]
+			remove element from top of c
+		else
+			add element s[i] to top of c
+	}
+	create string a
+	create integer y with y = size of c
+	while c is not empty
+		increment a by top of c
+		remove element from top of c
+	}
+	for i = y - 1 to 0 inclusive, decrementing i, print a[i]
+	print newline
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+create constant integer N with N = 1e5 + 5
+create constant integer inf with inf = 1e9
+create constant long long INF with INF = 1e18
+create constant double PI with PI = acosign of -1.0
+create constant double EPS with EPS = 1e-8
+create constant integer MOD with MOD = 1000000007
+int main() {
+	create string s
+	read s
+	create character stack st
+	for i = 0 to size of s exclusive
+		if st is empty
+			add element s[i] to top of st
+		else
+			if st is not empty and top of st is s[i]
+				while st is not empty and top of st is s[i], remove top of st
+			else
+				add element s[i] to top of st
+		}
+	}
+	create string ans with ans = ""
+	while st is not emtpy, increment and by top of st, remove top element from st
+	reverse element order from beginning of and to end of ans
+	prnt ans print newline
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+declare string a
+create int i
+int main() {
+	read a
+	loop i from length of a to 0 inclusive decrementing i
+		if a[i] = a[i + 1], remove 2 elements at the index i of a
+	}
+	print a
+	;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	create string s
+	get s
+	create character array stack with size of s
+	create long integer j with j=0
+	for integer i=0 to size of s exclusive
+		if j is equal to 0 then
+			set stack[j] to s[i] and increment j
+		else if stack[j-1] not equal to s[i] then
+			set stack[j] to s[i] and increment j
+		else do the following
+			decrement j
+		}
+	}
+	for i=0 to j exclusive print stack[i]
+	print a new line
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+maxn = const int with maxn = 200010
+str = char array of size maxn
+int main() {
+	loop while reading str
+		j, len = int with j = 1 and len = strlen of str
+		for i = 1 to len
+			if str[i] is str[j - 1]
+				decrement j
+				set str[j] to '\0'
+			else
+				set str[j] to str[i] then increment j
+			}
+		}
+		set str[j] to '\0'
+		print str
+	}
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+create stack of chars st
+int main() {
+	declare string s
+	read input to s
+	for i = 0 to length of s exclusive
+		if st is not empty and top element of st is not s[i]
+			remove top element of st
+		else
+			push s[i] into st
+	set s to ""
+	while st is not emptu
+		increase s by top element of st
+		remove top element of st
+	}
+	loop i from length of s - 1 to 0 inclusive decrementing i, printing s[i]
+	print a new line
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	s = string
+	read s
+	for i = s.size() - 2 down to 0
+		if s[i] is s[i + 1], erase(i, 2) from s
+	}
+	print s
+	return 0;
+}
+```
+
+
+probid: 81A
+pseudo program:
+```
+int main() {
+	s = string array
+	read s
+	for i = (s.length() - 1) to greater than or equal to 0 do the following
+		if s[i] is s[i + 1] then do the following s.erase(i, 2)
+	}
+	output s
+	return 0;
+}
+```
+
