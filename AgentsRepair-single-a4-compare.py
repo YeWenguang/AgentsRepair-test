@@ -18,7 +18,7 @@ device = "cuda"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-).to("cuda")
+)。to("cuda")
 
 with open(file_path, "r", encoding="utf-8") as file:
     pseudocode_content = file.read()
@@ -233,9 +233,9 @@ Convert the following pseudocode to C++code:
 """
 
             prompt = f"<s>[INST] {user_query.strip()} [/INST]\n"
-            inputs = tokenizer1(prompt, return_tensors="pt").to("cuda")
+            inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
 
-            output = model1.generate(
+            output = model.generate(
                 inputs["input_ids"],
                 max_new_tokens=4096,
                 do_sample=True,
@@ -243,9 +243,9 @@ Convert the following pseudocode to C++code:
                 temperature=0.1,
             )
             output = output[0].to("cpu")
-            print(tokenizer1.decode(output))
+            print(tokenizer.decode(output))
 
-            success, cpp_code, probid_content = extract_cpp_code(tokenizer1.decode(output), start_index + idx + 1)
+            success, cpp_code, probid_content = extract_cpp_code(tokenizer.decode(output), start_index + idx + 1)
 
         print("Codellama: Code generation finished")
 
@@ -284,9 +284,9 @@ You should provide the complete modified C++code in the end.
 """
 
                     prompt = f"<s>[INST] {user_query.strip()} [/INST]\n"
-                    inputs = tokenizer1(prompt, return_tensors="pt").to("cuda")
+                    inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
 
-                    output = model1.generate(
+                    output = model.generate(
                         inputs["input_ids"],
                         max_new_tokens=4096,
                         do_sample=True,
@@ -294,9 +294,9 @@ You should provide the complete modified C++code in the end.
                         temperature=0.1,
                     )
                     output = output[0].to("cpu")
-                    print(tokenizer1.decode(output))
+                    print(tokenizer.decode(output))
 
-                    success, cpp_code1, probid_content = extract_cpp_code(tokenizer1.decode(output), start_index + idx + 1)
+                    success, cpp_code1, probid_content = extract_cpp_code(tokenizer.decode(output), start_index + idx + 1)
                     if success:
                         cpp_code = cpp_code1
                 print("Codellama: The compile did not pass, and we analyzed the reasons and modification methods.")
@@ -356,9 +356,9 @@ You should provide the complete modified C++code in the end.
 """
 
                         prompt = f"<s>[INST] {user_query.strip()} [/INST]\n"
-                        inputs = tokenizer1(prompt, return_tensors="pt").to("cuda")
+                        inputs = tokenizer(prompt, return_tensors="pt").to("cuda")
 
-                        output = model1.generate(
+                        output = model.generate(
                             inputs["input_ids"],
                             max_new_tokens=4096,
                             do_sample=True,
@@ -366,9 +366,9 @@ You should provide the complete modified C++code in the end.
                             temperature=0.1,
                         )
                         output = output[0].to("cpu")
-                        print(tokenizer1.decode(output))
+                        print(tokenizer.decode(output))
 
-                        success, cpp_code2, probid_content = extract_cpp_code(tokenizer1.decode(output), start_index + idx + 1)
+                        success, cpp_code2, probid_content = extract_cpp_code(tokenizer.decode(output), start_index + idx + 1)
                         if success:
                             cpp_code = cpp_code2
                     print(
