@@ -10,10 +10,9 @@ from tqdm import tqdm
 from torch.nn.parallel import DataParallel
 
 
-model1_id = "codellama/CodeLlama-7b-Instruct-hf"
-model2_id = "mistralai/Mistral-7B-Instruct-v0.2"
-testcases_base_path = './SPoC/testcases'
-file_path = "./SPoC/train-eval-300.txt"
+model1_id = "/home/yewenguang/work/codellama-7b-instrct-hf"
+model2_id = "/home/yewenguang/work/Mistral-7B-Instruct-v0.2"
+file_path = "/home/yewenguang/work/codellama-main/SPoC/train-eval-300.txt"
 
 device = "cuda"
 
@@ -105,6 +104,7 @@ def compile_and_run_cpp(cpp_code):
 
 def read_test_cases(probid):
     test_cases = []
+    testcases_base_path = '/home/yewenguang/work/Code-Llama/spoc/testcases'
     testcases_path = f"{testcases_base_path}/{probid}/{probid}_testcases_public.txt"
     print("正在进行测试用例测试：")
     print(f"testcases_path: {testcases_path}")
@@ -635,7 +635,7 @@ progress_bar.set_postfix({
         "生成成功率": f"{success_rate:.2f}%",
         "测试成功率": f"{passed_rate:.2f}%",
         "主模型通过率": f"{first_rate:.2f}%",
-        "副模型通过率": f"{second_rate:.2f}%"
+        "副模型通过率" : f"{second_rate:.2f}%"
     })
 # 关闭进度条
 progress_bar.close()

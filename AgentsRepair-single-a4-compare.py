@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
+import torch
 import re
 import subprocess
 import os
@@ -10,8 +11,8 @@ from torch.nn.parallel import DataParallel
 
 
 model_id = "codellama/CodeLlama-7b-Instruct-hf"
-testcases_base_path = './SPoC/testcases'
 file_path = "./SPoC/train-eval-300.txt"
+testcases_base_path = './SPoC/testcases'
 
 device = "cuda"
 
@@ -96,6 +97,7 @@ def compile_and_run_cpp(cpp_code):
 
 def read_test_cases(probid):
     test_cases = []
+
     testcases_path = f"{testcases_base_path}/{probid}/{probid}_testcases_public.txt"
     print("正在进行测试用例测试：")
     print(f"testcases_path: {testcases_path}")
