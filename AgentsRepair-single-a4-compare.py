@@ -18,7 +18,7 @@ device = "cuda"
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-)。to("cuda")
+).to("cuda")
 
 with open(file_path, "r", encoding="utf-8") as file:
     pseudocode_content = file.read()

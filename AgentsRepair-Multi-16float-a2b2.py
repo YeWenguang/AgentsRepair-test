@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig
+import torch
 import re
 import subprocess
 import os
 import gc
 from tqdm import tqdm
 from torch.nn.parallel import DataParallel
+
 
 model1_id = "codellama/CodeLlama-7b-Instruct-hf"
 model2_id = "mistralai/Mistral-7B-Instruct-v0.2"
@@ -211,14 +213,17 @@ def extract_error_info(error_messages, source_code):
     return error_info
 
 
+
 failure_indices = []
 probid_content = ''
 success_rate = 0
+first_rate = 0
 second_rate = 0
 float1 = 0
 float2 = 0
 
 for idx, pseudocode in enumerate(pseudocodes[start_index:-1]):
+
 
     success = False
     cpp_code = ""
@@ -264,6 +269,7 @@ Convert the following pseudocode to C++code:
 
             if not compile_pass:
 
+
                 success = False
 
                 while not success:
@@ -300,8 +306,7 @@ You should provide the complete modified C++code in the end.
                     output = output[0].to("cpu")
                     print(tokenizer1.decode(output))
 
-                    success, cpp_code1, probid_content = extract_cpp_code(tokenizer1.decode(output),
-                                                                          start_index + idx + 1)
+                    success, cpp_code1, probid_content = extract_cpp_code(tokenizer1.decode(output), start_index + idx + 1)
                     if success:
                         cpp_code = cpp_code1
                 print("Codellama: The compile did not pass, and we analyzed the reasons and modification methods.")
@@ -318,7 +323,7 @@ You should provide the complete modified C++code in the end.
                     float1 += 1
                     break  # 如果成功提取 C++ 代码块，退出循环
                 else:
-                    # print("生成失败，正在重新生成：")
+                    #print("生成失败，正在重新生成：")
                     consecutive_failures += 1
                     if consecutive_failures >= 3:
                         print("codellama连续三次失败，将跳过codellama")
@@ -330,6 +335,7 @@ You should provide the complete modified C++code in the end.
                     float1 += 1
                     break  # 如果成功提取 C++ 代码块，退出循环
                 if not test_pass:
+
 
                     limited_lines = []
                     limited_text = ""
@@ -372,8 +378,7 @@ You should provide the complete modified C++code in the end.
                         output = output[0].to("cpu")
                         print(tokenizer1.decode(output))
 
-                        success, cpp_code2, probid_content = extract_cpp_code(tokenizer1.decode(output),
-                                                                              start_index + idx + 1)
+                        success, cpp_code2, probid_content = extract_cpp_code(tokenizer1.decode(output), start_index + idx + 1)
                         if success:
                             cpp_code = cpp_code2
                     print(
@@ -387,8 +392,7 @@ You should provide the complete modified C++code in the end.
                             break  # 如果成功提取 C++ 代码块，退出循环
                     else:
                         if error_message is not None:
-                            Error_Message = extract_error_info('\n'.join(error_message.strip().split('\n')[:100]),
-                                                               cpp_code)
+                            Error_Message = extract_error_info('\n'.join(error_message.strip().split('\n')[:100]), cpp_code)
 
                     if test_pass:
                         float1 += 1
@@ -408,6 +412,8 @@ You should provide the complete modified C++code in the end.
         success = False
 
         while not success:
+
+
             messages = [
                 {
                     "role": "user",
@@ -425,7 +431,7 @@ Convert the following pseudocode to C++code:
 
             generated_ids = model2.generate(model_inputs, max_new_tokens=4096, do_sample=True)
             decoded = tokenizer2.batch_decode(generated_ids)
-            # print(decoded[0])
+            #print(decoded[0])
 
             success, cpp_code, probid_content = extract_cpp_code(decoded[0], start_index + idx + 1)
         print("Mistral: Code generation finished")
@@ -448,6 +454,7 @@ Convert the following pseudocode to C++code:
     [...]
             """
             if not compile_pass:
+
 
                 success = False
 
@@ -504,7 +511,7 @@ You should provide the complete modified C++code in the end.
                     float2 += 1
                     break  # 如果成功提取 C++ 代码块，退出循环
                 else:
-                    # print("生成失败，正在重新生成：")
+                    #print("生成失败，正在重新生成：")
                     consecutive_failures += 1
                     if consecutive_failures >= 3:
                         print("mistral连续三次提取失败，将跳过此伪代码。")
@@ -574,8 +581,7 @@ You should provide the complete modified C++code in the end.
                             break  # 如果成功提取 C++ 代码块，退出循环
                     else:
                         if error_message is not None:
-                            Error_Message = extract_error_info('\n'.join(error_message.strip().split('\n')[:100]),
-                                                               cpp_code)
+                            Error_Message = extract_error_info('\n'.join(error_message.strip().split('\n')[:100]), cpp_code)
 
                     if test_pass:
                         float2 += 1
@@ -601,10 +607,11 @@ You should provide the complete modified C++code in the end.
 
     total_tests += 1
 
-    # print(f"success_count:{success_count}, passed_tests:{passed_tests}, total_tests:{total_tests}")
+    #print(f"success_count:{success_count}, passed_tests:{passed_tests}, total_tests:{total_tests}")
     passed_rate = (passed_tests / total_tests) * 100
     success_rate = (success_count / total_tests) * 100
-    second_rate = float2 / (total_tests - float1)
+    first_rate = (float1 / total_tests) * 100
+    second_rate = (float2 / total_tests) * 100
     progress_bar.update(1)
     progress_bar.set_postfix({
         "success_count": success_count,
@@ -614,20 +621,22 @@ You should provide the complete modified C++code in the end.
         "副模型通过数": float2,
         "生成成功率": f"{success_rate:.2f}%",
         "测试成功率": f"{passed_rate:.2f}%",
-        "副模型通过率": f"{second_rate}"
+        "主模型通过率": f"{first_rate:.2f}%",
+        "副模型通过率": f"{second_rate:.2f}%"
     })
     gc.collect()
 
 progress_bar.set_postfix({
-    "success_count": success_count,
-    "passed_tests:": passed_tests,
-    "total_tests": total_tests,
-    "主模型通过数": float1,
-    "副模型通过数": float2,
-    "生成成功率": f"{success_rate:.2f}%",
-    "测试成功率": f"{passed_rate:.2f}%",
-    "副模型通过率": f"{second_rate}"
-})
+        "success_count": success_count,
+        "passed_tests:": passed_tests,
+        "total_tests": total_tests,
+        "主模型通过数": float1,
+        "副模型通过数": float2,
+        "生成成功率": f"{success_rate:.2f}%",
+        "测试成功率": f"{passed_rate:.2f}%",
+        "主模型通过率": f"{first_rate:.2f}%",
+        "副模型通过率": f"{second_rate:.2f}%"
+    })
 # 关闭进度条
 progress_bar.close()
 
