@@ -11,7 +11,7 @@ from torch.nn.parallel import DataParallel
 model1_id = "codellama/CodeLlama-7b-Instruct-hf"
 model2_id = "mistralai/Mistral-7B-Instruct-v0.2"
 testcases_base_path = './SPoC/testcases'
-file_path = "./SPoC/train-eval-300.txt"
+file_path = "./SPoC/test-testp.txt"
 
 device = "cuda"
 
